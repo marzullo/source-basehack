@@ -1,0 +1,39 @@
+﻿Build started 2/17/2012 10:02:32 PM.
+     1>Project "C:\Users\Michael\Desktop\hl2h\Zion\Zion.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Zion.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\ssdk /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ZION_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\ssdk /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ZION_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Zion.cpp drawing.cpp ent.cpp hooks.cpp netvars.cpp
+         netvars.cpp
+         hooks.cpp
+         ent.cpp
+         drawing.cpp
+         Zion.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Michael\Desktop\hl2h\Zion\Debug\Zion.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Zion.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Michael\Desktop\hl2h\Zion\Debug\Zion.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Michael\Desktop\hl2h\Zion\Debug\Zion.lib" /MACHINE:X86 /DLL Debug\Zion.dll.embed.manifest.res
+         Debug\dllmain.obj
+         Debug\drawing.obj
+         Debug\ent.obj
+         Debug\hooks.obj
+         Debug\netvars.obj
+         Debug\vmthooks.obj
+         Debug\Zion.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Zion.dll.embed.manifest" /manifest Debug\Zion.dll.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Zion.vcxproj -> C:\Users\Michael\Desktop\hl2h\Zion\Debug\Zion.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\Zion.unsuccessfulbuild".
+         Touching "Debug\Zion.lastbuildstate".
+     1>Done Building Project "C:\Users\Michael\Desktop\hl2h\Zion\Zion.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.55

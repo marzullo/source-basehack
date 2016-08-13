@@ -1,0 +1,29 @@
+﻿Build started 8/4/2012 1:58:53 PM.
+     1>Project "C:\Users\Michael\Desktop\hacking\hl2h\Zion\Zion.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Zion.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\ssdk /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D ZION_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Zion.cpp
+         Zion.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Michael\Desktop\hacking\hl2h\Zion\Release\Zion.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Zion.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Michael\Desktop\hacking\hl2h\Zion\Release\Zion.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Michael\Desktop\hacking\hl2h\Zion\Release\Zion.lib" /MACHINE:X86 /DLL Release\dllmain.obj
+         Release\drawing.obj
+         Release\ent.obj
+         Release\hooks.obj
+         Release\netvars.obj
+         Release\vmthooks.obj
+         Release\Zion.obj /NODEFAULTLIB:LIBCMT
+         Generating code
+         Finished generating code
+         Zion.vcxproj -> C:\Users\Michael\Desktop\hacking\hl2h\Zion\Release\Zion.dll
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Michael\Desktop\hacking\hl2h\Zion\Release\Zion.dll;#2" /manifest Release\Zion.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\Zion.unsuccessfulbuild".
+         Touching "Release\Zion.lastbuildstate".
+     1>Done Building Project "C:\Users\Michael\Desktop\hacking\hl2h\Zion\Zion.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.58

@@ -1,0 +1,1573 @@
+== TABLE : DT_WeaponIFMSteadyCam ==
+-- props : 1 --
+== TABLE : DT_WeaponIFMBaseCamera ==
+-- props : 6 --
+	Name = m_flRenderAspectRatio 	Offset = 0x954 	Type = PT_FLOAT
+	Name = m_flRenderFOV 	Offset = 0x958 	Type = PT_FLOAT
+	Name = m_flRenderArmLength 	Offset = 0x95c 	Type = PT_FLOAT
+	Name = m_vecRenderPosition 	Offset = 0x960 	Type = PT_VECTOR
+	Name = m_angRenderAngles 	Offset = 0x96c 	Type = PT_QANGLE
+== TABLE : DT_WeaponIFMBase ==
+-- props : 1 --
+== TABLE : DT_WeaponDODBase ==
+-- props : 4 --
+	Name = m_iReloadModelIndex 	Offset = 0x888 	Type = PT_INT
+	Name = m_vInitialDropVelocity 	Offset = 0x88c 	Type = PT_VECTOR
+	Name = m_flSmackTime 	Offset = 0x8ac 	Type = PT_FLOAT
+== TABLE : DT_BaseCombatWeapon ==
+	== TABLE : DT_LocalWeaponData ==
+	-- props : 6 --
+		Name = m_iClip1 	Offset = 0x834 	Type = PT_INT
+		Name = m_iClip2 	Offset = 0x838 	Type = PT_INT
+		Name = m_iPrimaryAmmoType 	Offset = 0x82c 	Type = PT_INT
+		Name = m_iSecondaryAmmoType 	Offset = 0x830 	Type = PT_INT
+		Name = m_nViewModelIndex 	Offset = 0x7ec 	Type = PT_INT
+		Name = m_bFlipViewModel 	Offset = 0x864 	Type = PT_BOOL
+	== TABLE : DT_LocalActiveWeaponData ==
+	-- props : 4 --
+		Name = m_flNextPrimaryAttack 	Offset = 0x7f0 	Type = PT_FLOAT
+		Name = m_flNextSecondaryAttack 	Offset = 0x7f4 	Type = PT_FLOAT
+		Name = m_nNextThinkTick 	Offset = 0x84 	Type = PT_INT
+		Name = m_flTimeWeaponIdle 	Offset = 0x7f8 	Type = PT_FLOAT
+-- props : 7 --
+	Name = LocalWeaponData 	Offset = 0x0 	Type = PT_INT
+	Name = LocalActiveWeaponData 	Offset = 0x0 	Type = PT_INT
+	Name = m_iViewModelIndex 	Offset = 0x800 	Type = PT_INT
+	Name = m_iWorldModelIndex 	Offset = 0x804 	Type = PT_INT
+	Name = m_iState 	Offset = 0x824 	Type = PT_INT
+	Name = m_hOwner 	Offset = 0x7e8 	Type = PT_EHANDLE
+== TABLE : DT_BaseAnimating ==
+	== TABLE : DT_ServerAnimationData ==
+	-- props : 1 --
+		Name = m_flCycle 	Offset = 0x750 	Type = PT_FLOAT
+-- props : 22 --
+	Name = m_nSequence 	Offset = 0x748 	Type = PT_INT
+	Name = m_nForceBone 	Offset = 0x4f0 	Type = PT_INT
+	Name = m_vecForce 	Offset = 0x4e4 	Type = PT_VECTOR
+	Name = m_nSkin 	Offset = 0x4b0 	Type = PT_INT
+	Name = m_nBody 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_nHitboxSet 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_flModelWidthScale 	Offset = 0x5b0 	Type = PT_FLOAT
+	Name = m_flPoseParameter 	Offset = 0x5b4 	Type = PT_FLOAT
+	Name = m_flPlaybackRate 	Offset = 0x4d8 	Type = PT_FLOAT
+	Name = m_flEncodedController 	Offset = 0x6cc 	Type = PT_FLOAT
+	Name = m_bClientSideAnimation 	Offset = 0x718 	Type = PT_BOOL
+	Name = m_bClientSideFrameReset 	Offset = 0x520 	Type = PT_BOOL
+	Name = m_nNewSequenceParity 	Offset = 0x71c 	Type = PT_INT
+	Name = m_nResetEventsParity 	Offset = 0x720 	Type = PT_INT
+	Name = m_nMuzzleFlashParity 	Offset = 0x7c8 	Type = PT_INT
+	Name = m_hLightingOrigin 	Offset = 0x7c0 	Type = PT_EHANDLE
+	Name = m_hLightingOriginRelative 	Offset = 0x7c4 	Type = PT_EHANDLE
+	Name = serveranimdata 	Offset = 0x0 	Type = PT_INT
+	Name = m_fadeMinDist 	Offset = 0x558 	Type = PT_FLAGS
+	Name = m_fadeMaxDist 	Offset = 0x55c 	Type = PT_FLAGS
+	Name = m_flFadeScale 	Offset = 0x560 	Type = PT_FLOAT
+== TABLE : DT_BaseEntity ==
+	== TABLE : DT_AnimTimeMustBeFirst ==
+	-- props : 1 --
+		Name = m_flAnimTime 	Offset = 0x60 	Type = PT_FLOAT
+	== TABLE : DT_CollisionProperty ==
+	-- props : 8 --
+		Name = m_vecMins 	Offset = 0x8 	Type = PT_VECTOR
+		Name = m_vecMaxs 	Offset = 0x14 	Type = PT_VECTOR
+		Name = m_nSolidType 	Offset = 0x29 	Type = PT_INT
+		Name = m_usSolidFlags 	Offset = 0x24 	Type = PT_INT
+		Name = m_nSurroundType 	Offset = 0x28 	Type = PT_INT
+		Name = m_triggerBloat 	Offset = 0x2a 	Type = PT_INT
+		Name = m_vecSpecifiedSurroundingMins 	Offset = 0x2c 	Type = PT_VECTOR
+		Name = m_vecSpecifiedSurroundingMaxs 	Offset = 0x38 	Type = PT_VECTOR
+	== TABLE : DT_PredictableId ==
+	-- props : 2 --
+		Name = m_PredictableID 	Offset = 0x9c 	Type = PT_INT
+		Name = m_bIsPlayerSimulated 	Offset = 0x45c 	Type = PT_BOOL
+-- props : 26 --
+	Name = AnimTimeMustBeFirst 	Offset = 0x0 	Type = PT_INT
+	Name = m_flSimulationTime 	Offset = 0x68 	Type = PT_FLOAT
+	Name = m_ubInterpolationFrame 	Offset = 0x74 	Type = PT_INT
+	Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+	Name = m_angRotation 	Offset = 0x2d8 	Type = PT_QANGLE
+	Name = m_nModelIndex 	Offset = 0x8c 	Type = PT_INT
+	Name = m_fEffects 	Offset = 0x78 	Type = PT_FLAGS
+	Name = m_nRenderMode 	Offset = 0x7c 	Type = PT_INT
+	Name = m_nRenderFX 	Offset = 0x54 	Type = PT_INT
+	Name = m_clrRender 	Offset = 0x58 	Type = PT_INT
+	Name = m_iTeamNum 	Offset = 0x98 	Type = PT_INT
+	Name = m_CollisionGroup 	Offset = 0x2e8 	Type = PT_INT
+	Name = m_flElasticity 	Offset = 0x1e4 	Type = PT_FLOAT
+	Name = m_flShadowCastDistance 	Offset = 0x1e8 	Type = PT_FLOAT
+	Name = m_hOwnerEntity 	Offset = 0x46c 	Type = PT_EHANDLE
+	Name = m_hEffectEntity 	Offset = 0x470 	Type = PT_EHANDLE
+	Name = moveparent 	Offset = 0x15c 	Type = PT_INT
+	Name = m_iParentAttachment 	Offset = 0x146 	Type = PT_INT
+	Name = movetype 	Offset = 0x0 	Type = PT_INT
+	Name = movecollide 	Offset = 0x0 	Type = PT_INT
+	Name = m_Collision 	Offset = 0x168 	Type = PT_INT
+	Name = m_iTextureFrameIndex 	Offset = 0x460 	Type = PT_INT
+	Name = predictable_id 	Offset = 0x0 	Type = PT_INT
+	Name = m_bSimulatedEveryTick 	Offset = 0x45d 	Type = PT_BOOL
+	Name = m_bAnimatedEveryTick 	Offset = 0x45e 	Type = PT_BOOL
+	Name = m_bAlternateSorting 	Offset = 0x45f 	Type = PT_BOOL
+== TABLE : DT_WeaponThompson ==
+-- props : 1 --
+== TABLE : DT_FullAutoPunchWeapon ==
+-- props : 1 --
+== TABLE : DT_FullAutoWeapon ==
+-- props : 1 --
+== TABLE : DT_WeaponDODBaseGun ==
+	== TABLE : DT_LocalActiveWeaponBaseGunData ==
+	-- props : 0 --
+-- props : 2 --
+	Name = LocalActiveWeaponBaseGunData 	Offset = 0x0 	Type = PT_INT
+== TABLE : DT_WeaponStickGrenade ==
+-- props : 1 --
+== TABLE : DT_WeaponDODBaseGrenade ==
+-- props : 3 --
+	Name = m_bPinPulled 	Offset = 0x921 	Type = PT_BOOL
+	Name = m_bArmed 	Offset = 0x922 	Type = PT_BOOL
+== TABLE : DT_WeaponSpring ==
+-- props : 1 --
+== TABLE : DT_SniperWeapon ==
+-- props : 3 --
+	Name = m_bZoomed 	Offset = 0x920 	Type = PT_BOOL
+	Name = m_bDoViewAnim 	Offset = 0x928 	Type = PT_BOOL
+== TABLE : DT_SemiAutoWeapon ==
+-- props : 1 --
+== TABLE : DT_WeaponSpade ==
+-- props : 1 --
+== TABLE : DT_WeaponDODBaseMelee ==
+-- props : 1 --
+== TABLE : DT_WeaponSmokeGrenadeUS ==
+-- props : 1 --
+== TABLE : DT_WeaponSmokeGrenadeGER ==
+-- props : 1 --
+== TABLE : DT_WeaponRifleGrenadeUS_Live ==
+-- props : 1 --
+== TABLE : DT_WeaponRifleGrenadeUS ==
+-- props : 1 --
+== TABLE : DT_WeaponBaseRifleGrenade ==
+-- props : 1 --
+== TABLE : DT_WeaponRifleGrenadeGER_Live ==
+-- props : 1 --
+== TABLE : DT_WeaponRifleGrenadeGER ==
+-- props : 1 --
+== TABLE : DT_WeaponPschreck ==
+-- props : 1 --
+== TABLE : DT_BaseRocketWeapon ==
+-- props : 2 --
+	Name = m_bDeployed 	Offset = 0x920 	Type = PT_BOOL
+== TABLE : DT_WeaponP38 ==
+-- props : 1 --
+== TABLE : DT_WeaponMP44 ==
+-- props : 1 --
+== TABLE : DT_FireSelectWeapon ==
+-- props : 2 --
+	Name = m_bSemiAuto 	Offset = 0x928 	Type = PT_BOOL
+== TABLE : DT_WeaponMP40 ==
+-- props : 1 --
+== TABLE : DT_WeaponMG42 ==
+-- props : 4 --
+	Name = m_iWeaponHeat 	Offset = 0x958 	Type = PT_INT
+	Name = m_flNextCoolTime 	Offset = 0x95c 	Type = PT_FLOAT
+	Name = m_bOverheated 	Offset = 0x960 	Type = PT_BOOL
+== TABLE : DT_BipodWeapon ==
+-- props : 3 --
+	Name = m_bDeployed 	Offset = 0x928 	Type = PT_BOOL
+	Name = m_iDeployedReloadModelIndex 	Offset = 0x930 	Type = PT_INT
+== TABLE : DT_WeaponM1Carbine ==
+-- props : 1 --
+== TABLE : DT_WeaponK98Scoped ==
+-- props : 1 --
+== TABLE : DT_WeaponK98 ==
+-- props : 1 --
+== TABLE : DT_WeaponHandGrenade ==
+-- props : 1 --
+== TABLE : DT_WeaponGarand ==
+-- props : 1 --
+== TABLE : DT_WeaponExplodingStickGrenade ==
+-- props : 1 --
+== TABLE : DT_WeaponExplodingHandGrenade ==
+-- props : 1 --
+== TABLE : DT_BaseBombWeapon ==
+-- props : 1 --
+== TABLE : DT_WeaponColt ==
+-- props : 1 --
+== TABLE : DT_WeaponC96 ==
+-- props : 1 --
+== TABLE : DT_WeaponBazooka ==
+-- props : 1 --
+== TABLE : DT_WeaponBAR ==
+-- props : 1 --
+== TABLE : DT_WeaponAmerKnife ==
+-- props : 1 --
+== TABLE : DT_Weapon30cal ==
+-- props : 1 --
+== TABLE : DT_DODViewModel ==
+-- props : 1 --
+== TABLE : DT_BaseViewModel ==
+-- props : 15 --
+	Name = m_nModelIndex 	Offset = 0x8c 	Type = PT_INT
+	Name = m_nSkin 	Offset = 0x4b0 	Type = PT_INT
+	Name = m_nBody 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_nSequence 	Offset = 0x748 	Type = PT_INT
+	Name = m_nViewModelIndex 	Offset = 0x7f8 	Type = PT_INT
+	Name = m_flPlaybackRate 	Offset = 0x4d8 	Type = PT_FLOAT
+	Name = m_fEffects 	Offset = 0x78 	Type = PT_FLAGS
+	Name = m_nAnimationParity 	Offset = 0x808 	Type = PT_INT
+	Name = m_hWeapon 	Offset = 0x818 	Type = PT_EHANDLE
+	Name = m_hOwner 	Offset = 0x7fc 	Type = PT_EHANDLE
+	Name = m_nNewSequenceParity 	Offset = 0x71c 	Type = PT_INT
+	Name = m_nResetEventsParity 	Offset = 0x720 	Type = PT_INT
+	Name = m_nMuzzleFlashParity 	Offset = 0x7c8 	Type = PT_INT
+	Name = m_flPoseParameter[0] 	Offset = 0x5b4 	Type = PT_FLOAT
+	Name = m_flPoseParameter 	Offset = 0x0 	Type = PT_FLOAT
+== TABLE : DT_DODRoundTimer ==
+-- props : 3 --
+	Name = m_bTimerPaused 	Offset = 0x4a8 	Type = PT_BOOL
+	Name = m_flTimeRemaining 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_flTimerEndTime 	Offset = 0x4b0 	Type = PT_FLOAT
+== TABLE : DT_FuncNewTeamWall ==
+-- props : 1 --
+== TABLE : DT_DODGameRulesProxy ==
+	== TABLE : DT_DODGameRules ==
+	-- props : 13 --
+		Name = m_iRoundState 	Offset = 0x38 	Type = PT_INT
+		Name = m_bInWarmup 	Offset = 0xa4 	Type = PT_BOOL
+		Name = m_bAwaitingReadyRestart 	Offset = 0xa5 	Type = PT_BOOL
+		Name = m_flMapResetTime 	Offset = 0xac 	Type = PT_FLOAT
+		Name = m_flRestartRoundTime 	Offset = 0xa8 	Type = PT_FLOAT
+		Name = m_bAlliesAreBombing 	Offset = 0xb0 	Type = PT_BOOL
+		Name = m_bAxisAreBombing 	Offset = 0xb1 	Type = PT_BOOL
+		Name = m_AlliesRespawnQueue 	Offset = 0x3c 	Type = PT_UNKNOWN
+		Name = m_AxisRespawnQueue 	Offset = 0x64 	Type = PT_UNKNOWN
+		Name = m_iAlliesRespawnHead 	Offset = 0x8c 	Type = PT_INT
+		Name = m_iAlliesRespawnTail 	Offset = 0x90 	Type = PT_INT
+		Name = m_iAxisRespawnHead 	Offset = 0x94 	Type = PT_INT
+		Name = m_iAxisRespawnTail 	Offset = 0x98 	Type = PT_INT
+-- props : 2 --
+	Name = dod_gamerules_data 	Offset = 0x0 	Type = PT_INT
+== TABLE : DT_GameRulesProxy ==
+-- props : 0 --
+== TABLE : DT_TEDODExplosion ==
+-- props : 5 --
+	Name = m_vecOrigin[0] 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecOrigin[1] 	Offset = 0x14 	Type = PT_VECTOR
+	Name = m_vecOrigin[2] 	Offset = 0x18 	Type = PT_VECTOR
+	Name = m_vecNormal 	Offset = 0x1c 	Type = PT_VECTOR
+== TABLE : DT_BaseTempEntity ==
+-- props : 0 --
+== TABLE : DT_TEFireBullets ==
+-- props : 8 --
+	Name = m_vecOrigin 	Offset = 0x14 	Type = PT_VECTOR
+	Name = m_vecAngles[0] 	Offset = 0x20 	Type = PT_VECTOR
+	Name = m_vecAngles[1] 	Offset = 0x24 	Type = PT_VECTOR
+	Name = m_iWeaponID 	Offset = 0x2c 	Type = PT_INT
+	Name = m_iMode 	Offset = 0x30 	Type = PT_INT
+	Name = m_iSeed 	Offset = 0x34 	Type = PT_INT
+	Name = m_iPlayer 	Offset = 0x10 	Type = PT_INT
+	Name = m_flSpread 	Offset = 0x38 	Type = PT_FLOAT
+== TABLE : DT_GrenadeTrail ==
+-- props : 6 --
+	Name = m_SpawnRate 	Offset = 0x594 	Type = PT_FLOAT
+	Name = m_ParticleLifetime 	Offset = 0x5b4 	Type = PT_FLOAT
+	Name = m_StopEmitTime 	Offset = 0x5b8 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5e4 	Type = PT_BOOL
+	Name = m_nAttachment 	Offset = 0x5e8 	Type = PT_INT
+== TABLE : DT_BaseParticleEntity ==
+-- props : 1 --
+== TABLE : DT_DODTeam_Axis ==
+-- props : 1 --
+== TABLE : DT_DODTeam ==
+-- props : 1 --
+== TABLE : DT_Team ==
+-- props : 6 --
+	Name = m_iTeamNum 	Offset = 0x4f0 	Type = PT_INT
+	Name = m_iScore 	Offset = 0x4dc 	Type = PT_INT
+	Name = m_iRoundsWon 	Offset = 0x4e0 	Type = PT_INT
+	Name = m_szTeamname 	Offset = 0x4bc 	Type = PT_CHARS
+	Name = player_array_element 	Offset = 0x0 	Type = PT_ARRAYELEMENT
+	Name = "player_array" 	Offset = 0x0 	Type = PT_ARRAYQUOTE
+== TABLE : DT_DODTeam_Allies ==
+-- props : 1 --
+== TABLE : DT_DODSmokeGrenade ==
+-- props : 2 --
+	Name = m_flSmokeSpawnTime 	Offset = 0x820 	Type = PT_FLOAT
+== TABLE : DT_DODBaseGrenade ==
+-- props : 2 --
+	Name = m_vInitialVelocity 	Offset = 0x814 	Type = PT_VECTOR
+== TABLE : DT_BaseGrenade ==
+-- props : 7 --
+	Name = m_flDamage 	Offset = 0x7fc 	Type = PT_FLOAT
+	Name = m_DmgRadius 	Offset = 0x7ec 	Type = PT_FLOAT
+	Name = m_bIsLive 	Offset = 0x7e9 	Type = PT_BOOL
+	Name = m_hThrower 	Offset = 0x804 	Type = PT_EHANDLE
+	Name = m_vecVelocity 	Offset = 0xf0 	Type = PT_VECTOR
+	Name = m_fFlags 	Offset = 0x2e4 	Type = PT_FLAGS
+== TABLE : DT_DODPlayerResource ==
+-- props : 3 --
+	Name = m_iObjScore 	Offset = 0x8a8 	Type = PT_INT
+	Name = m_iPlayerClass 	Offset = 0x930 	Type = PT_INT
+== TABLE : DT_PlayerResource ==
+-- props : 7 --
+	Name = m_iPing 	Offset = 0x534 	Type = PT_INT
+	Name = m_iScore 	Offset = 0x5bc 	Type = PT_INT
+	Name = m_iDeaths 	Offset = 0x644 	Type = PT_INT
+	Name = m_bConnected 	Offset = 0x6cc 	Type = PT_BOOL
+	Name = m_iTeam 	Offset = 0x6f0 	Type = PT_INT
+	Name = m_bAlive 	Offset = 0x778 	Type = PT_BOOL
+	Name = m_iHealth 	Offset = 0x79c 	Type = PT_INT
+== TABLE : DT_DODRagdoll ==
+-- props : 6 --
+	Name = m_vecRagdollOrigin 	Offset = 0x860 	Type = PT_VECTOR
+	Name = m_hPlayer 	Offset = 0x850 	Type = PT_EHANDLE
+	Name = m_nModelIndex 	Offset = 0x8c 	Type = PT_INT
+	Name = m_nForceBone 	Offset = 0x4f0 	Type = PT_INT
+	Name = m_vecForce 	Offset = 0x4e4 	Type = PT_VECTOR
+	Name = m_vecRagdollVelocity 	Offset = 0x854 	Type = PT_VECTOR
+== TABLE : DT_DODPlayer ==
+	== TABLE : DT_DODPlayerShared ==
+		== TABLE : DT_DODSharedLocalPlayerExclusive ==
+		-- props : 7 --
+			Name = m_iPlayerClass 	Offset = 0x8 	Type = PT_INT
+			Name = m_iDesiredPlayerClass 	Offset = 0xc 	Type = PT_INT
+			Name = m_flDeployedYawLimitLeft 	Offset = 0x1c 	Type = PT_FLOAT
+			Name = m_flDeployedYawLimitRight 	Offset = 0x20 	Type = PT_FLOAT
+			Name = m_iCPIndex 	Offset = 0x4c 	Type = PT_INT
+			Name = m_bPlayerDominated 	Offset = 0x5c 	Type = PT_BOOL
+			Name = m_bPlayerDominatingMe 	Offset = 0x7e 	Type = PT_BOOL
+	-- props : 11 --
+		Name = m_flStamina 	Offset = 0x10 	Type = PT_FLOAT
+		Name = m_flSlowedUntilTime 	Offset = 0x14 	Type = PT_FLOAT
+		Name = m_bProne 	Offset = 0x4 	Type = PT_BOOL
+		Name = m_bIsSprinting 	Offset = 0x18 	Type = PT_BOOL
+		Name = m_flGoProneTime 	Offset = 0x40 	Type = PT_FLOAT
+		Name = m_flUnProneTime 	Offset = 0x3c 	Type = PT_FLOAT
+		Name = m_flDeployChangeTime 	Offset = 0x44 	Type = PT_FLOAT
+		Name = m_flDeployedHeight 	Offset = 0x38 	Type = PT_FLOAT
+		Name = m_bPlanting 	Offset = 0x24 	Type = PT_BOOL
+		Name = m_bDefusing 	Offset = 0x25 	Type = PT_BOOL
+		Name = dodsharedlocaldata 	Offset = 0x0 	Type = PT_INT
+	== TABLE : DT_DODLocalPlayerExclusive ==
+	-- props : 5 --
+		Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+		Name = m_flStunDuration 	Offset = 0x1438 	Type = PT_FLOAT
+		Name = m_flStunMaxAlpha 	Offset = 0x1434 	Type = PT_FLOAT
+		Name = m_iProgressBarDuration 	Offset = 0x143c 	Type = PT_INT
+		Name = m_flProgressBarStartTime 	Offset = 0x1440 	Type = PT_FLOAT
+	== TABLE : DT_DODNonLocalPlayerExclusive ==
+	-- props : 1 --
+		Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+-- props : 9 --
+	Name = m_Shared 	Offset = 0x136c 	Type = PT_INT
+	Name = dodlocaldata 	Offset = 0x0 	Type = PT_INT
+	Name = dodnonlocaldata 	Offset = 0x0 	Type = PT_INT
+	Name = m_angEyeAngles[0] 	Offset = 0x1334 	Type = PT_QANGLE
+	Name = m_angEyeAngles[1] 	Offset = 0x1338 	Type = PT_QANGLE
+	Name = m_hRagdoll 	Offset = 0x141c 	Type = PT_EHANDLE
+	Name = m_bSpawnInterpCounter 	Offset = 0x1469 	Type = PT_BOOL
+	Name = m_iAchievementAwardsMask 	Offset = 0x14d4 	Type = PT_INT
+== TABLE : DT_BasePlayer ==
+	== TABLE : DT_LocalPlayerExclusive ==
+		== TABLE : DT_Local ==
+		-- props : 41 --
+			Name = m_chAreaBits 	Offset = 0x4 	Type = PT_CHAR
+			Name = m_chAreaPortalBits 	Offset = 0x24 	Type = PT_CHAR
+			Name = m_iHideHUD 	Offset = 0x3c 	Type = PT_INT
+			Name = m_flFOVRate 	Offset = 0x40 	Type = PT_FLOAT
+			Name = m_bDucked 	Offset = 0x44 	Type = PT_BOOL
+			Name = m_bDucking 	Offset = 0x45 	Type = PT_BOOL
+			Name = m_bInDuckJump 	Offset = 0x46 	Type = PT_BOOL
+			Name = m_flDucktime 	Offset = 0x48 	Type = PT_FLOAT
+			Name = m_flDuckJumpTime 	Offset = 0x4c 	Type = PT_FLOAT
+			Name = m_flJumpTime 	Offset = 0x50 	Type = PT_FLOAT
+			Name = m_flFallVelocity 	Offset = 0x58 	Type = PT_FLOAT
+			Name = m_vecPunchAngle 	Offset = 0x6c 	Type = PT_VECTOR
+			Name = m_vecPunchAngleVel 	Offset = 0xa4 	Type = PT_VECTOR
+			Name = m_bDrawViewmodel 	Offset = 0xdc 	Type = PT_BOOL
+			Name = m_bWearingSuit 	Offset = 0xdd 	Type = PT_BOOL
+			Name = m_bPoisoned 	Offset = 0xde 	Type = PT_BOOL
+			Name = m_flStepSize 	Offset = 0xe0 	Type = PT_FLOAT
+			Name = m_bAllowAutoMovement 	Offset = 0xe4 	Type = PT_BOOL
+			Name = m_skybox3d.scale 	Offset = 0xec 	Type = PT_INT
+			Name = m_skybox3d.origin 	Offset = 0xf0 	Type = PT_VECTOR
+			Name = m_skybox3d.area 	Offset = 0xfc 	Type = PT_INT
+			Name = m_skybox3d.fog.enable 	Offset = 0x140 	Type = PT_INT
+			Name = m_skybox3d.fog.blend 	Offset = 0x141 	Type = PT_INT
+			Name = m_skybox3d.fog.dirPrimary 	Offset = 0x104 	Type = PT_VECTOR
+			Name = m_skybox3d.fog.colorPrimary 	Offset = 0x110 	Type = PT_INT
+			Name = m_skybox3d.fog.colorSecondary 	Offset = 0x114 	Type = PT_INT
+			Name = m_skybox3d.fog.start 	Offset = 0x120 	Type = PT_FLOAT
+			Name = m_skybox3d.fog.end 	Offset = 0x124 	Type = PT_FLOAT
+			Name = m_skybox3d.fog.maxdensity 	Offset = 0x12c 	Type = PT_FLOAT
+			Name = m_PlayerFog.m_hCtrl 	Offset = 0x148 	Type = PT_INT
+			Name = m_audio.localSound[0] 	Offset = 0x16c 	Type = PT_VECTOR
+			Name = m_audio.localSound[1] 	Offset = 0x178 	Type = PT_VECTOR
+			Name = m_audio.localSound[2] 	Offset = 0x184 	Type = PT_VECTOR
+			Name = m_audio.localSound[3] 	Offset = 0x190 	Type = PT_VECTOR
+			Name = m_audio.localSound[4] 	Offset = 0x19c 	Type = PT_VECTOR
+			Name = m_audio.localSound[5] 	Offset = 0x1a8 	Type = PT_VECTOR
+			Name = m_audio.localSound[6] 	Offset = 0x1b4 	Type = PT_VECTOR
+			Name = m_audio.localSound[7] 	Offset = 0x1c0 	Type = PT_VECTOR
+			Name = m_audio.soundscapeIndex 	Offset = 0x1cc 	Type = PT_INT
+			Name = m_audio.localBits 	Offset = 0x1d0 	Type = PT_INT
+			Name = m_audio.ent 	Offset = 0x1d4 	Type = PT_INT
+	-- props : 23 --
+		Name = m_Local 	Offset = 0xd3c 	Type = PT_INT
+		Name = m_vecViewOffset[0] 	Offset = 0xe4 	Type = PT_VECTOR
+		Name = m_vecViewOffset[1] 	Offset = 0xe8 	Type = PT_VECTOR
+		Name = m_vecViewOffset[2] 	Offset = 0xec 	Type = PT_VECTOR
+		Name = m_flFriction 	Offset = 0x1f8 	Type = PT_FLOAT
+		Name = m_iAmmo 	Offset = 0xba8 	Type = PT_INT
+		Name = m_fOnTarget 	Offset = 0xf40 	Type = PT_FLAGS
+		Name = m_nTickBase 	Offset = 0x1040 	Type = PT_INT
+		Name = m_nNextThinkTick 	Offset = 0x84 	Type = PT_INT
+		Name = m_hLastWeapon 	Offset = 0x1054 	Type = PT_EHANDLE
+		Name = m_hGroundEntity 	Offset = 0x1f0 	Type = PT_EHANDLE
+		Name = m_vecVelocity[0] 	Offset = 0xf0 	Type = PT_VECTOR
+		Name = m_vecVelocity[1] 	Offset = 0xf4 	Type = PT_VECTOR
+		Name = m_vecVelocity[2] 	Offset = 0xf8 	Type = PT_VECTOR
+		Name = m_vecBaseVelocity 	Offset = 0x124 	Type = PT_VECTOR
+		Name = m_hConstraintEntity 	Offset = 0xf78 	Type = PT_EHANDLE
+		Name = m_vecConstraintCenter 	Offset = 0xf7c 	Type = PT_VECTOR
+		Name = m_flConstraintRadius 	Offset = 0xf88 	Type = PT_FLOAT
+		Name = m_flConstraintWidth 	Offset = 0xf8c 	Type = PT_FLOAT
+		Name = m_flConstraintSpeedFactor 	Offset = 0xf90 	Type = PT_FLOAT
+		Name = m_flDeathTime 	Offset = 0xfb8 	Type = PT_FLOAT
+		Name = m_nWaterLevel 	Offset = 0x148 	Type = PT_INT
+		Name = m_flLaggedMovementValue 	Offset = 0x1190 	Type = PT_FLOAT
+	== TABLE : DT_PlayerState ==
+	-- props : 1 --
+		Name = deadflag 	Offset = 0x4 	Type = PT_INT
+-- props : 21 --
+	Name = localdata 	Offset = 0x0 	Type = PT_INT
+	Name = pl 	Offset = 0xf18 	Type = PT_INT
+	Name = m_iFOV 	Offset = 0xf2c 	Type = PT_INT
+	Name = m_iFOVStart 	Offset = 0xf30 	Type = PT_INT
+	Name = m_flFOVTime 	Offset = 0xf34 	Type = PT_FLOAT
+	Name = m_iDefaultFOV 	Offset = 0xf38 	Type = PT_INT
+	Name = m_hZoomOwner 	Offset = 0xf3c 	Type = PT_EHANDLE
+	Name = m_hVehicle 	Offset = 0xfc4 	Type = PT_EHANDLE
+	Name = m_hUseEntity 	Offset = 0xfcc 	Type = PT_EHANDLE
+	Name = m_iHealth 	Offset = 0x90 	Type = PT_INT
+	Name = m_lifeState 	Offset = 0x8f 	Type = PT_INT
+	Name = m_iBonusProgress 	Offset = 0xfd4 	Type = PT_INT
+	Name = m_iBonusChallenge 	Offset = 0xfd8 	Type = PT_INT
+	Name = m_flMaxspeed 	Offset = 0xfd0 	Type = PT_FLOAT
+	Name = m_fFlags 	Offset = 0x2e4 	Type = PT_FLAGS
+	Name = m_iObserverMode 	Offset = 0xf94 	Type = PT_INT
+	Name = m_hObserverTarget 	Offset = 0xf98 	Type = PT_EHANDLE
+	Name = m_hViewModel[0] 	Offset = 0x106c 	Type = PT_EHANDLE
+	Name = m_hViewModel 	Offset = 0x0 	Type = PT_EHANDLE
+	Name = m_szLastPlaceName 	Offset = 0x11b0 	Type = PT_CHARS
+== TABLE : DT_BaseCombatCharacter ==
+	== TABLE : DT_BCCLocalPlayerExclusive ==
+	-- props : 1 --
+		Name = m_flNextAttack 	Offset = 0xba0 	Type = PT_FLOAT
+-- props : 4 --
+	Name = bcc_localdata 	Offset = 0x0 	Type = PT_INT
+	Name = m_hActiveWeapon 	Offset = 0xce8 	Type = PT_EHANDLE
+	Name = m_hMyWeapons 	Offset = 0xc28 	Type = PT_EHANDLE
+== TABLE : DT_BaseFlex ==
+-- props : 4 --
+	Name = m_flexWeight 	Offset = 0x88c 	Type = PT_FLOAT
+	Name = m_blinktoggle 	Offset = 0xa38 	Type = PT_BOOL
+	Name = m_viewtarget 	Offset = 0x854 	Type = PT_VECTOR
+== TABLE : DT_BaseAnimatingOverlay ==
+	== TABLE : DT_OverlayVars ==
+	-- props : 1 --
+		Name = m_AnimOverlay 	Offset = 0x0 	Type = PT_UNKNOWN
+-- props : 2 --
+	Name = overlay_vars 	Offset = 0x0 	Type = PT_INT
+== TABLE : DT_TEPlayerAnimEvent ==
+-- props : 3 --
+	Name = m_hPlayer 	Offset = 0x10 	Type = PT_EHANDLE
+	Name = m_iEvent 	Offset = 0x14 	Type = PT_INT
+	Name = m_nData 	Offset = 0x18 	Type = PT_INT
+== TABLE : DT_DODObjectiveResource ==
+-- props : 21 --
+	Name = m_iNumControlPoints 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_vCPPositions[0] 	Offset = 0x4ac 	Type = PT_VECTOR
+	Name = m_vCPPositions 	Offset = 0x0 	Type = PT_UNKNOWN
+	Name = m_bCPIsVisible 	Offset = 0x50c 	Type = PT_BOOL
+	Name = m_iAlliesIcons 	Offset = 0x514 	Type = PT_INT
+	Name = m_iAxisIcons 	Offset = 0x534 	Type = PT_INT
+	Name = m_iNeutralIcons 	Offset = 0x554 	Type = PT_INT
+	Name = m_iTimerCapIcons 	Offset = 0x574 	Type = PT_INT
+	Name = m_iBombedIcons 	Offset = 0x594 	Type = PT_INT
+	Name = m_iAlliesReqCappers 	Offset = 0x5b4 	Type = PT_INT
+	Name = m_iAxisReqCappers 	Offset = 0x5d4 	Type = PT_INT
+	Name = m_flAlliesCapTime 	Offset = 0x5f4 	Type = PT_FLOAT
+	Name = m_flAxisCapTime 	Offset = 0x614 	Type = PT_FLOAT
+	Name = m_bBombPlanted 	Offset = 0x634 	Type = PT_BOOL
+	Name = m_iBombsRequired 	Offset = 0x63c 	Type = PT_INT
+	Name = m_iBombsRemaining 	Offset = 0x65c 	Type = PT_INT
+	Name = m_bBombBeingDefused 	Offset = 0x67c 	Type = PT_BOOL
+	Name = m_iNumAllies 	Offset = 0x684 	Type = PT_INT
+	Name = m_iNumAxis 	Offset = 0x6a4 	Type = PT_INT
+	Name = m_iCappingTeam 	Offset = 0x6c4 	Type = PT_INT
+	Name = m_iOwner 	Offset = 0x6e4 	Type = PT_INT
+== TABLE : DT_DODBombTarget ==
+-- props : 5 --
+	Name = m_iState 	Offset = 0x7e8 	Type = PT_INT
+	Name = m_iBombingTeam 	Offset = 0x7ec 	Type = PT_INT
+	Name = m_iTargetModel 	Offset = 0x7f0 	Type = PT_INT
+	Name = m_iUnavailableModel 	Offset = 0x7f4 	Type = PT_INT
+== TABLE : DT_DODBombDispenserMapIcon ==
+-- props : 1 --
+== TABLE : DT_DODBaseRocket ==
+-- props : 2 --
+	Name = m_vInitialVelocity 	Offset = 0x7e8 	Type = PT_VECTOR
+== TABLE : DT_DODRifleGrenadeGER ==
+-- props : 1 --
+== TABLE : DT_DODRifleGrenadeUS ==
+-- props : 1 --
+== TABLE : DT_NextBot ==
+-- props : 1 --
+== TABLE : DT_TestTraceline ==
+-- props : 6 --
+	Name = m_clrRender 	Offset = 0x58 	Type = PT_INT
+	Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+	Name = m_angRotation[0] 	Offset = 0x2d8 	Type = PT_QANGLE
+	Name = m_angRotation[1] 	Offset = 0x2dc 	Type = PT_QANGLE
+	Name = m_angRotation[2] 	Offset = 0x2e0 	Type = PT_QANGLE
+	Name = moveparent 	Offset = 0x15c 	Type = PT_INT
+== TABLE : DT_TEWorldDecal ==
+-- props : 3 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_nIndex 	Offset = 0x1c 	Type = PT_INT
+== TABLE : DT_TESpriteSpray ==
+-- props : 7 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecDirection 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x28 	Type = PT_INT
+	Name = m_fNoise 	Offset = 0x30 	Type = PT_FLAGS
+	Name = m_nCount 	Offset = 0x34 	Type = PT_INT
+	Name = m_nSpeed 	Offset = 0x2c 	Type = PT_INT
+== TABLE : DT_TESprite ==
+-- props : 5 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x1c 	Type = PT_INT
+	Name = m_fScale 	Offset = 0x20 	Type = PT_FLAGS
+	Name = m_nBrightness 	Offset = 0x24 	Type = PT_INT
+== TABLE : DT_TESparks ==
+-- props : 4 --
+	Name = m_nMagnitude 	Offset = 0x1c 	Type = PT_INT
+	Name = m_nTrailLength 	Offset = 0x20 	Type = PT_INT
+	Name = m_vecDir 	Offset = 0x24 	Type = PT_VECTOR
+== TABLE : DT_TEParticleSystem ==
+-- props : 4 --
+	Name = m_vecOrigin[0] 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecOrigin[1] 	Offset = 0x14 	Type = PT_VECTOR
+	Name = m_vecOrigin[2] 	Offset = 0x18 	Type = PT_VECTOR
+== TABLE : DT_TESmoke ==
+-- props : 5 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x1c 	Type = PT_INT
+	Name = m_fScale 	Offset = 0x20 	Type = PT_FLAGS
+	Name = m_nFrameRate 	Offset = 0x24 	Type = PT_INT
+== TABLE : DT_TEShowLine ==
+-- props : 2 --
+	Name = m_vecEnd 	Offset = 0x1c 	Type = PT_VECTOR
+== TABLE : DT_TEProjectedDecal ==
+-- props : 5 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_angRotation 	Offset = 0x1c 	Type = PT_QANGLE
+	Name = m_flDistance 	Offset = 0x28 	Type = PT_FLOAT
+	Name = m_nIndex 	Offset = 0x2c 	Type = PT_INT
+== TABLE : DT_TEPlayerDecal ==
+-- props : 4 --
+	Name = m_vecOrigin 	Offset = 0x14 	Type = PT_VECTOR
+	Name = m_nEntity 	Offset = 0x20 	Type = PT_INT
+	Name = m_nPlayer 	Offset = 0x10 	Type = PT_INT
+== TABLE : DT_TEPhysicsProp ==
+-- props : 10 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_angRotation[0] 	Offset = 0x1c 	Type = PT_QANGLE
+	Name = m_angRotation[1] 	Offset = 0x20 	Type = PT_QANGLE
+	Name = m_angRotation[2] 	Offset = 0x24 	Type = PT_QANGLE
+	Name = m_vecVelocity 	Offset = 0x28 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x34 	Type = PT_INT
+	Name = m_nFlags 	Offset = 0x3c 	Type = PT_INT
+	Name = m_nSkin 	Offset = 0x38 	Type = PT_INT
+	Name = m_nEffects 	Offset = 0x40 	Type = PT_INT
+== TABLE : DT_TEMuzzleFlash ==
+-- props : 5 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecAngles 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_flScale 	Offset = 0x28 	Type = PT_FLOAT
+	Name = m_nType 	Offset = 0x2c 	Type = PT_INT
+== TABLE : DT_TELargeFunnel ==
+-- props : 3 --
+	Name = m_nModelIndex 	Offset = 0x1c 	Type = PT_INT
+	Name = m_nReversed 	Offset = 0x20 	Type = PT_INT
+== TABLE : DT_TEKillPlayerAttachments ==
+-- props : 2 --
+	Name = m_nPlayer 	Offset = 0x10 	Type = PT_INT
+== TABLE : DT_TEImpact ==
+-- props : 5 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecNormal 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_iType 	Offset = 0x28 	Type = PT_INT
+	Name = m_ucFlags 	Offset = 0x2c 	Type = PT_INT
+== TABLE : DT_TEGlowSprite ==
+-- props : 6 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x1c 	Type = PT_INT
+	Name = m_fScale 	Offset = 0x20 	Type = PT_FLAGS
+	Name = m_fLife 	Offset = 0x24 	Type = PT_FLAGS
+	Name = m_nBrightness 	Offset = 0x28 	Type = PT_INT
+== TABLE : DT_TEShatterSurface ==
+-- props : 15 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecAngles 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_vecForce 	Offset = 0x28 	Type = PT_VECTOR
+	Name = m_vecForcePos 	Offset = 0x34 	Type = PT_VECTOR
+	Name = m_flWidth 	Offset = 0x40 	Type = PT_FLOAT
+	Name = m_flHeight 	Offset = 0x44 	Type = PT_FLOAT
+	Name = m_flShardSize 	Offset = 0x48 	Type = PT_FLOAT
+	Name = m_nSurfaceType 	Offset = 0x50 	Type = PT_INT
+	Name = m_uchFrontColor[0] 	Offset = 0x54 	Type = PT_UCHAR
+	Name = m_uchFrontColor[1] 	Offset = 0x55 	Type = PT_UCHAR
+	Name = m_uchFrontColor[2] 	Offset = 0x56 	Type = PT_UCHAR
+	Name = m_uchBackColor[0] 	Offset = 0x57 	Type = PT_UCHAR
+	Name = m_uchBackColor[1] 	Offset = 0x58 	Type = PT_UCHAR
+	Name = m_uchBackColor[2] 	Offset = 0x59 	Type = PT_UCHAR
+== TABLE : DT_TEFootprintDecal ==
+-- props : 6 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecDirection 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_nEntity 	Offset = 0x34 	Type = PT_INT
+	Name = m_nIndex 	Offset = 0x38 	Type = PT_INT
+	Name = m_chMaterialType 	Offset = 0x3c 	Type = PT_CHAR
+== TABLE : DT_TEFizz ==
+-- props : 5 --
+	Name = m_nEntity 	Offset = 0x10 	Type = PT_INT
+	Name = m_nModelIndex 	Offset = 0x14 	Type = PT_INT
+	Name = m_nDensity 	Offset = 0x18 	Type = PT_INT
+	Name = m_nCurrent 	Offset = 0x1c 	Type = PT_INT
+== TABLE : DT_TEExplosion ==
+-- props : 9 --
+	Name = m_nModelIndex 	Offset = 0x1c 	Type = PT_INT
+	Name = m_fScale 	Offset = 0x20 	Type = PT_FLAGS
+	Name = m_nFrameRate 	Offset = 0x24 	Type = PT_INT
+	Name = m_nFlags 	Offset = 0x28 	Type = PT_INT
+	Name = m_vecNormal 	Offset = 0x2c 	Type = PT_VECTOR
+	Name = m_chMaterialType 	Offset = 0x38 	Type = PT_CHAR
+	Name = m_nRadius 	Offset = 0x3c 	Type = PT_INT
+	Name = m_nMagnitude 	Offset = 0x40 	Type = PT_INT
+== TABLE : DT_TEEnergySplash ==
+-- props : 3 --
+	Name = m_vecPos 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecDir 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_bExplosive 	Offset = 0x28 	Type = PT_BOOL
+== TABLE : DT_TEEffectDispatch ==
+	== TABLE : DT_EffectData ==
+	-- props : 28 --
+		Name = m_vOrigin[0] 	Offset = 0x0 	Type = PT_FLOAT
+		Name = m_vOrigin[1] 	Offset = 0x4 	Type = PT_FLOAT
+		Name = m_vOrigin[2] 	Offset = 0x8 	Type = PT_FLOAT
+		Name = m_vStart[0] 	Offset = 0xc 	Type = PT_FLOAT
+		Name = m_vStart[1] 	Offset = 0x10 	Type = PT_FLOAT
+		Name = m_vStart[2] 	Offset = 0x14 	Type = PT_FLOAT
+		Name = m_vAngles 	Offset = 0x24 	Type = PT_VECTOR
+		Name = m_vNormal 	Offset = 0x18 	Type = PT_VECTOR
+		Name = m_fFlags 	Offset = 0x30 	Type = PT_FLAGS
+		Name = m_flMagnitude 	Offset = 0x3c 	Type = PT_FLOAT
+		Name = m_flScale 	Offset = 0x38 	Type = PT_FLOAT
+		Name = m_nAttachmentIndex 	Offset = 0x44 	Type = PT_INT
+		Name = m_nSurfaceProp 	Offset = 0x48 	Type = PT_INT
+		Name = m_iEffectName 	Offset = 0x88 	Type = PT_INT
+		Name = m_nMaterial 	Offset = 0x4c 	Type = PT_INT
+		Name = m_nDamageType 	Offset = 0x50 	Type = PT_INT
+		Name = m_nHitBox 	Offset = 0x54 	Type = PT_INT
+		Name = entindex 	Offset = 0x0 	Type = PT_INT
+		Name = m_nColor 	Offset = 0x58 	Type = PT_INT
+		Name = m_flRadius 	Offset = 0x40 	Type = PT_FLOAT
+		Name = m_bCustomColors 	Offset = 0x59 	Type = PT_BOOL
+		Name = m_CustomColors.m_vecColor1 	Offset = 0x5c 	Type = PT_VECTOR
+		Name = m_CustomColors.m_vecColor2 	Offset = 0x68 	Type = PT_VECTOR
+		Name = m_bControlPoint1 	Offset = 0x74 	Type = PT_BOOL
+		Name = m_ControlPoint1.m_eParticleAttachment 	Offset = 0x78 	Type = PT_INT
+		Name = m_ControlPoint1.m_vecOffset[0] 	Offset = 0x7c 	Type = PT_FLOAT
+		Name = m_ControlPoint1.m_vecOffset[1] 	Offset = 0x80 	Type = PT_FLOAT
+		Name = m_ControlPoint1.m_vecOffset[2] 	Offset = 0x84 	Type = PT_FLOAT
+-- props : 2 --
+	Name = m_EffectData 	Offset = 0x10 	Type = PT_INT
+== TABLE : DT_TEDynamicLight ==
+-- props : 9 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = r 	Offset = 0x20 	Type = PT_INT
+	Name = g 	Offset = 0x24 	Type = PT_INT
+	Name = b 	Offset = 0x28 	Type = PT_INT
+	Name = exponent 	Offset = 0x2c 	Type = PT_INT
+	Name = m_fRadius 	Offset = 0x1c 	Type = PT_FLAGS
+	Name = m_fTime 	Offset = 0x30 	Type = PT_FLAGS
+	Name = m_fDecay 	Offset = 0x34 	Type = PT_FLAGS
+== TABLE : DT_TEDecal ==
+-- props : 6 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecStart 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_nEntity 	Offset = 0x28 	Type = PT_INT
+	Name = m_nHitbox 	Offset = 0x2c 	Type = PT_INT
+	Name = m_nIndex 	Offset = 0x30 	Type = PT_INT
+== TABLE : DT_TEClientProjectile ==
+-- props : 6 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecVelocity 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x28 	Type = PT_INT
+	Name = m_nLifeTime 	Offset = 0x2c 	Type = PT_INT
+	Name = m_hOwner 	Offset = 0x30 	Type = PT_EHANDLE
+== TABLE : DT_TEBubbleTrail ==
+-- props : 7 --
+	Name = m_vecMins 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecMaxs 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x2c 	Type = PT_INT
+	Name = m_flWaterZ 	Offset = 0x28 	Type = PT_FLOAT
+	Name = m_nCount 	Offset = 0x30 	Type = PT_INT
+	Name = m_fSpeed 	Offset = 0x34 	Type = PT_FLAGS
+== TABLE : DT_TEBubbles ==
+-- props : 7 --
+	Name = m_vecMins 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecMaxs 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x2c 	Type = PT_INT
+	Name = m_fHeight 	Offset = 0x28 	Type = PT_FLAGS
+	Name = m_nCount 	Offset = 0x30 	Type = PT_INT
+	Name = m_fSpeed 	Offset = 0x34 	Type = PT_FLAGS
+== TABLE : DT_TEBSPDecal ==
+-- props : 4 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_nEntity 	Offset = 0x1c 	Type = PT_INT
+	Name = m_nIndex 	Offset = 0x20 	Type = PT_INT
+== TABLE : DT_TEBreakModel ==
+-- props : 12 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_angRotation[0] 	Offset = 0x1c 	Type = PT_QANGLE
+	Name = m_angRotation[1] 	Offset = 0x20 	Type = PT_QANGLE
+	Name = m_angRotation[2] 	Offset = 0x24 	Type = PT_QANGLE
+	Name = m_vecSize 	Offset = 0x28 	Type = PT_VECTOR
+	Name = m_vecVelocity 	Offset = 0x34 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x44 	Type = PT_INT
+	Name = m_nRandomization 	Offset = 0x40 	Type = PT_INT
+	Name = m_nCount 	Offset = 0x48 	Type = PT_INT
+	Name = m_fTime 	Offset = 0x4c 	Type = PT_FLAGS
+	Name = m_nFlags 	Offset = 0x50 	Type = PT_INT
+== TABLE : DT_TEBloodStream ==
+-- props : 7 --
+	Name = m_vecDirection 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = r 	Offset = 0x28 	Type = PT_INT
+	Name = g 	Offset = 0x2c 	Type = PT_INT
+	Name = b 	Offset = 0x30 	Type = PT_INT
+	Name = a 	Offset = 0x34 	Type = PT_INT
+	Name = m_nAmount 	Offset = 0x38 	Type = PT_INT
+== TABLE : DT_TEBloodSprite ==
+-- props : 9 --
+	Name = m_vecOrigin 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecDirection 	Offset = 0x1c 	Type = PT_VECTOR
+	Name = r 	Offset = 0x28 	Type = PT_INT
+	Name = g 	Offset = 0x2c 	Type = PT_INT
+	Name = b 	Offset = 0x30 	Type = PT_INT
+	Name = a 	Offset = 0x34 	Type = PT_INT
+	Name = m_nSprayModel 	Offset = 0x3c 	Type = PT_INT
+	Name = m_nDropModel 	Offset = 0x38 	Type = PT_INT
+	Name = m_nSize 	Offset = 0x40 	Type = PT_INT
+== TABLE : DT_TEBeamSpline ==
+-- props : 3 --
+	Name = m_nPoints 	Offset = 0xd0 	Type = PT_INT
+	Name = m_vecPoints[0] 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecPoints 	Offset = 0x0 	Type = PT_VECTOR
+== TABLE : DT_TEBeamRingPoint ==
+-- props : 4 --
+	Name = m_vecCenter 	Offset = 0x4c 	Type = PT_VECTOR
+	Name = m_flStartRadius 	Offset = 0x58 	Type = PT_FLOAT
+	Name = m_flEndRadius 	Offset = 0x5c 	Type = PT_FLOAT
+== TABLE : DT_BaseBeam ==
+-- props : 15 --
+	Name = m_nModelIndex 	Offset = 0x10 	Type = PT_INT
+	Name = m_nHaloIndex 	Offset = 0x14 	Type = PT_INT
+	Name = m_nStartFrame 	Offset = 0x18 	Type = PT_INT
+	Name = m_nFrameRate 	Offset = 0x1c 	Type = PT_INT
+	Name = m_fLife 	Offset = 0x20 	Type = PT_FLAGS
+	Name = m_fWidth 	Offset = 0x24 	Type = PT_FLAGS
+	Name = m_fEndWidth 	Offset = 0x28 	Type = PT_FLAGS
+	Name = m_nFadeLength 	Offset = 0x2c 	Type = PT_INT
+	Name = m_fAmplitude 	Offset = 0x30 	Type = PT_FLAGS
+	Name = m_nSpeed 	Offset = 0x44 	Type = PT_INT
+	Name = r 	Offset = 0x34 	Type = PT_INT
+	Name = g 	Offset = 0x38 	Type = PT_INT
+	Name = b 	Offset = 0x3c 	Type = PT_INT
+	Name = a 	Offset = 0x40 	Type = PT_INT
+	Name = m_nFlags 	Offset = 0x48 	Type = PT_INT
+== TABLE : DT_TEBeamRing ==
+-- props : 3 --
+	Name = m_nStartEntity 	Offset = 0x4c 	Type = PT_INT
+	Name = m_nEndEntity 	Offset = 0x50 	Type = PT_INT
+== TABLE : DT_TEBeamPoints ==
+-- props : 3 --
+	Name = m_vecStartPoint 	Offset = 0x4c 	Type = PT_VECTOR
+	Name = m_vecEndPoint 	Offset = 0x58 	Type = PT_VECTOR
+== TABLE : DT_TEBeamLaser ==
+-- props : 3 --
+	Name = m_nStartEntity 	Offset = 0x4c 	Type = PT_INT
+	Name = m_nEndEntity 	Offset = 0x50 	Type = PT_INT
+== TABLE : DT_TEBeamFollow ==
+-- props : 2 --
+	Name = m_iEntIndex 	Offset = 0x4c 	Type = PT_INT
+== TABLE : DT_TEBeamEnts ==
+-- props : 3 --
+	Name = m_nStartEntity 	Offset = 0x4c 	Type = PT_INT
+	Name = m_nEndEntity 	Offset = 0x50 	Type = PT_INT
+== TABLE : DT_TEBeamEntPoint ==
+-- props : 5 --
+	Name = m_nStartEntity 	Offset = 0x4c 	Type = PT_INT
+	Name = m_nEndEntity 	Offset = 0x50 	Type = PT_INT
+	Name = m_vecStartPoint 	Offset = 0x54 	Type = PT_VECTOR
+	Name = m_vecEndPoint 	Offset = 0x60 	Type = PT_VECTOR
+== TABLE : DT_TEArmorRicochet ==
+-- props : 1 --
+== TABLE : DT_TEMetalSparks ==
+-- props : 2 --
+	Name = m_vecPos 	Offset = 0x10 	Type = PT_VECTOR
+	Name = m_vecDir 	Offset = 0x1c 	Type = PT_VECTOR
+== TABLE : DT_SteamJet ==
+-- props : 12 --
+	Name = m_SpreadSpeed 	Offset = 0x594 	Type = PT_FLOAT
+	Name = m_Speed 	Offset = 0x598 	Type = PT_FLOAT
+	Name = m_StartSize 	Offset = 0x59c 	Type = PT_FLOAT
+	Name = m_EndSize 	Offset = 0x5a0 	Type = PT_FLOAT
+	Name = m_Rate 	Offset = 0x5a4 	Type = PT_FLOAT
+	Name = m_JetLength 	Offset = 0x5a8 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5ac 	Type = PT_BOOL
+	Name = m_bFaceLeft 	Offset = 0x5b4 	Type = PT_BOOL
+	Name = m_nType 	Offset = 0x5b0 	Type = PT_INT
+	Name = m_spawnflags 	Offset = 0x5b8 	Type = PT_INT
+	Name = m_flRollSpeed 	Offset = 0x5bc 	Type = PT_FLOAT
+== TABLE : DT_SmokeStack ==
+-- props : 19 --
+	Name = m_SpreadSpeed 	Offset = 0x5e4 	Type = PT_FLOAT
+	Name = m_Speed 	Offset = 0x5e8 	Type = PT_FLOAT
+	Name = m_StartSize 	Offset = 0x5ec 	Type = PT_FLOAT
+	Name = m_EndSize 	Offset = 0x5f0 	Type = PT_FLOAT
+	Name = m_Rate 	Offset = 0x5f4 	Type = PT_FLOAT
+	Name = m_JetLength 	Offset = 0x5f8 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5fc 	Type = PT_BOOL
+	Name = m_flBaseSpread 	Offset = 0x600 	Type = PT_FLOAT
+	Name = m_flTwist 	Offset = 0x654 	Type = PT_FLOAT
+	Name = m_flRollSpeed 	Offset = 0x690 	Type = PT_FLOAT
+	Name = m_iMaterialModel 	Offset = 0x658 	Type = PT_INT
+	Name = m_AmbientLight.m_vPos 	Offset = 0x604 	Type = PT_VECTOR
+	Name = m_AmbientLight.m_vColor 	Offset = 0x610 	Type = PT_VECTOR
+	Name = m_AmbientLight.m_flIntensity 	Offset = 0x61c 	Type = PT_FLOAT
+	Name = m_DirLight.m_vPos 	Offset = 0x620 	Type = PT_VECTOR
+	Name = m_DirLight.m_vColor 	Offset = 0x62c 	Type = PT_VECTOR
+	Name = m_DirLight.m_flIntensity 	Offset = 0x638 	Type = PT_FLOAT
+	Name = m_vWind 	Offset = 0x648 	Type = PT_VECTOR
+== TABLE : DT_DustTrail ==
+-- props : 14 --
+	Name = m_SpawnRate 	Offset = 0x594 	Type = PT_FLOAT
+	Name = m_Color 	Offset = 0x598 	Type = PT_VECTOR
+	Name = m_ParticleLifetime 	Offset = 0x5a8 	Type = PT_FLOAT
+	Name = m_StopEmitTime 	Offset = 0x5b0 	Type = PT_FLOAT
+	Name = m_MinSpeed 	Offset = 0x5b4 	Type = PT_FLOAT
+	Name = m_MaxSpeed 	Offset = 0x5b8 	Type = PT_FLOAT
+	Name = m_MinDirectedSpeed 	Offset = 0x5bc 	Type = PT_FLOAT
+	Name = m_MaxDirectedSpeed 	Offset = 0x5c0 	Type = PT_FLOAT
+	Name = m_StartSize 	Offset = 0x5c4 	Type = PT_FLOAT
+	Name = m_EndSize 	Offset = 0x5c8 	Type = PT_FLOAT
+	Name = m_SpawnRadius 	Offset = 0x5cc 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5dc 	Type = PT_BOOL
+	Name = m_Opacity 	Offset = 0x5a4 	Type = PT_FLOAT
+== TABLE : DT_FireTrail ==
+-- props : 3 --
+	Name = m_nAttachment 	Offset = 0x594 	Type = PT_INT
+	Name = m_flLifetime 	Offset = 0x598 	Type = PT_FLOAT
+== TABLE : DT_SporeTrail ==
+-- props : 8 --
+	Name = m_flSpawnRate 	Offset = 0x59c 	Type = PT_FLOAT
+	Name = m_vecEndColor 	Offset = 0x590 	Type = PT_VECTOR
+	Name = m_flParticleLifetime 	Offset = 0x5a0 	Type = PT_FLOAT
+	Name = m_flStartSize 	Offset = 0x5a4 	Type = PT_FLOAT
+	Name = m_flEndSize 	Offset = 0x5a8 	Type = PT_FLOAT
+	Name = m_flSpawnRadius 	Offset = 0x5ac 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5bc 	Type = PT_BOOL
+== TABLE : DT_SporeExplosion ==
+-- props : 8 --
+	Name = m_flSpawnRate 	Offset = 0x594 	Type = PT_FLOAT
+	Name = m_flParticleLifetime 	Offset = 0x598 	Type = PT_FLOAT
+	Name = m_flStartSize 	Offset = 0x59c 	Type = PT_FLOAT
+	Name = m_flEndSize 	Offset = 0x5a0 	Type = PT_FLOAT
+	Name = m_flSpawnRadius 	Offset = 0x5a4 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5ac 	Type = PT_BOOL
+	Name = m_bDontRemove 	Offset = 0x5ad 	Type = PT_BOOL
+== TABLE : DT_RocketTrail ==
+-- props : 16 --
+	Name = m_SpawnRate 	Offset = 0x594 	Type = PT_FLOAT
+	Name = m_StartColor 	Offset = 0x598 	Type = PT_VECTOR
+	Name = m_EndColor 	Offset = 0x5a4 	Type = PT_VECTOR
+	Name = m_ParticleLifetime 	Offset = 0x5b4 	Type = PT_FLOAT
+	Name = m_StopEmitTime 	Offset = 0x5b8 	Type = PT_FLOAT
+	Name = m_MinSpeed 	Offset = 0x5bc 	Type = PT_FLOAT
+	Name = m_MaxSpeed 	Offset = 0x5c0 	Type = PT_FLOAT
+	Name = m_StartSize 	Offset = 0x5c4 	Type = PT_FLOAT
+	Name = m_EndSize 	Offset = 0x5c8 	Type = PT_FLOAT
+	Name = m_SpawnRadius 	Offset = 0x5cc 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5dc 	Type = PT_BOOL
+	Name = m_nAttachment 	Offset = 0x5e0 	Type = PT_INT
+	Name = m_Opacity 	Offset = 0x5b0 	Type = PT_FLOAT
+	Name = m_bDamaged 	Offset = 0x5dd 	Type = PT_BOOL
+	Name = m_flFlareScale 	Offset = 0x5f0 	Type = PT_FLOAT
+== TABLE : DT_SmokeTrail ==
+-- props : 16 --
+	Name = m_SpawnRate 	Offset = 0x594 	Type = PT_FLOAT
+	Name = m_StartColor 	Offset = 0x598 	Type = PT_VECTOR
+	Name = m_EndColor 	Offset = 0x5a4 	Type = PT_VECTOR
+	Name = m_ParticleLifetime 	Offset = 0x5b4 	Type = PT_FLOAT
+	Name = m_StopEmitTime 	Offset = 0x5b8 	Type = PT_FLOAT
+	Name = m_MinSpeed 	Offset = 0x5bc 	Type = PT_FLOAT
+	Name = m_MaxSpeed 	Offset = 0x5c0 	Type = PT_FLOAT
+	Name = m_MinDirectedSpeed 	Offset = 0x5c4 	Type = PT_FLOAT
+	Name = m_MaxDirectedSpeed 	Offset = 0x5c8 	Type = PT_FLOAT
+	Name = m_StartSize 	Offset = 0x5cc 	Type = PT_FLOAT
+	Name = m_EndSize 	Offset = 0x5d0 	Type = PT_FLOAT
+	Name = m_SpawnRadius 	Offset = 0x5d4 	Type = PT_FLOAT
+	Name = m_bEmit 	Offset = 0x5e4 	Type = PT_BOOL
+	Name = m_nAttachment 	Offset = 0x5e8 	Type = PT_INT
+	Name = m_Opacity 	Offset = 0x5b0 	Type = PT_FLOAT
+== TABLE : DT_PropVehicleDriveable ==
+-- props : 15 --
+	Name = m_hPlayer 	Offset = 0x7ec 	Type = PT_EHANDLE
+	Name = m_nSpeed 	Offset = 0x7f0 	Type = PT_INT
+	Name = m_nRPM 	Offset = 0x7f4 	Type = PT_INT
+	Name = m_flThrottle 	Offset = 0x7f8 	Type = PT_FLOAT
+	Name = m_nBoostTimeLeft 	Offset = 0x7fc 	Type = PT_INT
+	Name = m_nHasBoost 	Offset = 0x800 	Type = PT_INT
+	Name = m_nScannerDisabledWeapons 	Offset = 0x804 	Type = PT_INT
+	Name = m_nScannerDisabledVehicle 	Offset = 0x808 	Type = PT_INT
+	Name = m_bEnterAnimOn 	Offset = 0x828 	Type = PT_BOOL
+	Name = m_bExitAnimOn 	Offset = 0x829 	Type = PT_BOOL
+	Name = m_bUnableToFire 	Offset = 0x875 	Type = PT_BOOL
+	Name = m_vecEyeExitEndpoint 	Offset = 0x868 	Type = PT_VECTOR
+	Name = m_bHasGun 	Offset = 0x874 	Type = PT_BOOL
+	Name = m_vecGunCrosshair 	Offset = 0x830 	Type = PT_VECTOR
+== TABLE : DT_ParticleSmokeGrenade ==
+-- props : 5 --
+	Name = m_flSpawnTime 	Offset = 0x5a4 	Type = PT_FLOAT
+	Name = m_FadeStartTime 	Offset = 0x5a8 	Type = PT_FLOAT
+	Name = m_FadeEndTime 	Offset = 0x5ac 	Type = PT_FLOAT
+	Name = m_CurrentStage 	Offset = 0x594 	Type = PT_INT
+== TABLE : DT_ParticleFire ==
+-- props : 2 --
+	Name = m_vOrigin 	Offset = 0x59c 	Type = PT_VECTOR
+	Name = m_vDirection 	Offset = 0x5a8 	Type = PT_VECTOR
+== TABLE : DT_MovieExplosion ==
+-- props : 1 --
+== TABLE : DT_TEGaussExplosion ==
+-- props : 3 --
+	Name = m_nType 	Offset = 0x1c 	Type = PT_INT
+	Name = m_vecDirection 	Offset = 0x20 	Type = PT_VECTOR
+== TABLE : DT_QuadraticBeam ==
+-- props : 5 --
+	Name = m_targetPosition 	Offset = 0x4a8 	Type = PT_VECTOR
+	Name = m_controlPosition 	Offset = 0x4b4 	Type = PT_VECTOR
+	Name = m_scrollRate 	Offset = 0x4c0 	Type = PT_FLOAT
+	Name = m_flWidth 	Offset = 0x4c4 	Type = PT_FLOAT
+== TABLE : DT_Embers ==
+-- props : 5 --
+	Name = m_nDensity 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_nLifetime 	Offset = 0x4ac 	Type = PT_INT
+	Name = m_nSpeed 	Offset = 0x4b0 	Type = PT_INT
+	Name = m_bEmit 	Offset = 0x4b4 	Type = PT_BOOL
+== TABLE : DT_EnvWind ==
+	== TABLE : DT_EnvWindShared ==
+	-- props : 12 --
+		Name = m_iMinWind 	Offset = 0xc 	Type = PT_INT
+		Name = m_iMaxWind 	Offset = 0x10 	Type = PT_INT
+		Name = m_iMinGust 	Offset = 0x14 	Type = PT_INT
+		Name = m_iMaxGust 	Offset = 0x18 	Type = PT_INT
+		Name = m_flMinGustDelay 	Offset = 0x1c 	Type = PT_FLOAT
+		Name = m_flMaxGustDelay 	Offset = 0x20 	Type = PT_FLOAT
+		Name = m_iGustDirChange 	Offset = 0x28 	Type = PT_INT
+		Name = m_iWindSeed 	Offset = 0x8 	Type = PT_INT
+		Name = m_iInitialWindDir 	Offset = 0x38 	Type = PT_INT
+		Name = m_flInitialWindSpeed 	Offset = 0x3c 	Type = PT_FLOAT
+		Name = m_flStartTime 	Offset = 0x4 	Type = PT_FLOAT
+		Name = m_flGustDuration 	Offset = 0x24 	Type = PT_FLOAT
+-- props : 2 --
+	Name = m_EnvWindShared 	Offset = 0x4a8 	Type = PT_INT
+== TABLE : DT_Precipitation ==
+-- props : 2 --
+	Name = m_nPrecipType 	Offset = 0x4d0 	Type = PT_INT
+== TABLE : DT_HandleTest ==
+-- props : 3 --
+	Name = m_Handle 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_bSendHandle 	Offset = 0x4ac 	Type = PT_BOOL
+== TABLE : DT_TeamplayRoundBasedRulesProxy ==
+	== TABLE : DT_TeamplayRoundBasedRules ==
+	-- props : 14 --
+		Name = m_iRoundState 	Offset = 0x28 	Type = PT_INT
+		Name = m_bInWaitingForPlayers 	Offset = 0x38 	Type = PT_BOOL
+		Name = m_iWinningTeam 	Offset = 0x30 	Type = PT_INT
+		Name = m_bInOvertime 	Offset = 0x2c 	Type = PT_BOOL
+		Name = m_bInSetup 	Offset = 0x2d 	Type = PT_BOOL
+		Name = m_bSwitchedTeamsThisRound 	Offset = 0x2e 	Type = PT_BOOL
+		Name = m_bAwaitingReadyRestart 	Offset = 0x39 	Type = PT_BOOL
+		Name = m_flRestartRoundTime 	Offset = 0x3c 	Type = PT_FLOAT
+		Name = m_flMapResetTime 	Offset = 0x40 	Type = PT_FLOAT
+		Name = m_flNextRespawnWave 	Offset = 0x44 	Type = PT_FLOAT
+		Name = m_TeamRespawnWaveTimes 	Offset = 0xe8 	Type = PT_UNKNOWN
+		Name = m_bTeamReady 	Offset = 0xc4 	Type = PT_BOOL
+		Name = m_bStopWatch 	Offset = 0xe4 	Type = PT_BOOL
+		Name = m_bMultipleTrains 	Offset = 0xe5 	Type = PT_BOOL
+-- props : 2 --
+	Name = teamplayroundbased_gamerules_data 	Offset = 0x0 	Type = PT_INT
+== TABLE : DT_SpriteTrail ==
+-- props : 9 --
+	Name = m_flLifeTime 	Offset = 0xb3c 	Type = PT_FLOAT
+	Name = m_flStartWidth 	Offset = 0xb40 	Type = PT_FLOAT
+	Name = m_flEndWidth 	Offset = 0xb44 	Type = PT_FLOAT
+	Name = m_flStartWidthVariance 	Offset = 0xb48 	Type = PT_FLOAT
+	Name = m_flTextureRes 	Offset = 0xb4c 	Type = PT_FLOAT
+	Name = m_flMinFadeLength 	Offset = 0xb50 	Type = PT_FLOAT
+	Name = m_vecSkyboxOrigin 	Offset = 0xb54 	Type = PT_VECTOR
+	Name = m_flSkyboxScale 	Offset = 0xb60 	Type = PT_FLOAT
+== TABLE : DT_Sprite ==
+-- props : 12 --
+	Name = m_hAttachedToEntity 	Offset = 0x4b8 	Type = PT_EHANDLE
+	Name = m_nAttachment 	Offset = 0x4bc 	Type = PT_INT
+	Name = m_flScaleTime 	Offset = 0x4d8 	Type = PT_FLOAT
+	Name = m_flSpriteScale 	Offset = 0x4d4 	Type = PT_FLOAT
+	Name = m_flSpriteFramerate 	Offset = 0x4c0 	Type = PT_FLOAT
+	Name = m_flGlowProxySize 	Offset = 0x4e0 	Type = PT_FLOAT
+	Name = m_flHDRColorScale 	Offset = 0x4e4 	Type = PT_FLOAT
+	Name = m_flFrame 	Offset = 0x4c4 	Type = PT_FLOAT
+	Name = m_flBrightnessTime 	Offset = 0x4d0 	Type = PT_FLOAT
+	Name = m_nBrightness 	Offset = 0x4cc 	Type = PT_INT
+	Name = m_bWorldSpaceScale 	Offset = 0x4dc 	Type = PT_BOOL
+== TABLE : DT_SpriteOriented ==
+-- props : 1 --
+== TABLE : DT_Ragdoll_Attached ==
+-- props : 5 --
+	Name = m_boneIndexAttached 	Offset = 0xb20 	Type = PT_BOOL
+	Name = m_ragdollAttachedObjectIndex 	Offset = 0xb1c 	Type = PT_INT
+	Name = m_attachmentPointBoneSpace 	Offset = 0xaf8 	Type = PT_VECTOR
+	Name = m_attachmentPointRagdollSpace 	Offset = 0xb10 	Type = PT_VECTOR
+== TABLE : DT_Ragdoll ==
+-- props : 8 --
+	Name = m_ragAngles[0] 	Offset = 0x908 	Type = PT_VECTOR
+	Name = m_ragAngles 	Offset = 0x0 	Type = PT_UNKNOWN
+	Name = m_ragPos[0] 	Offset = 0x7e8 	Type = PT_VECTOR
+	Name = m_ragPos 	Offset = 0x0 	Type = PT_UNKNOWN
+	Name = m_hUnragdoll 	Offset = 0xae4 	Type = PT_EHANDLE
+	Name = m_flBlendWeight 	Offset = 0xae8 	Type = PT_FLOAT
+	Name = m_nOverlaySequence 	Offset = 0xaf0 	Type = PT_INT
+== TABLE : DT_PoseController ==
+-- props : 12 --
+	Name = m_hProps 	Offset = 0x4a8 	Type = PT_EHANDLE
+	Name = m_chPoseIndex 	Offset = 0x4b8 	Type = PT_CHAR
+	Name = m_bPoseValueParity 	Offset = 0x4bc 	Type = PT_BOOL
+	Name = m_fPoseValue 	Offset = 0x4c0 	Type = PT_FLAGS
+	Name = m_fInterpolationTime 	Offset = 0x4c4 	Type = PT_FLAGS
+	Name = m_bInterpolationWrap 	Offset = 0x4c8 	Type = PT_BOOL
+	Name = m_fCycleFrequency 	Offset = 0x4cc 	Type = PT_FLAGS
+	Name = m_nFModType 	Offset = 0x4d0 	Type = PT_INT
+	Name = m_fFModTimeOffset 	Offset = 0x4d4 	Type = PT_FLAGS
+	Name = m_fFModRate 	Offset = 0x4d8 	Type = PT_FLAGS
+	Name = m_fFModAmplitude 	Offset = 0x4dc 	Type = PT_FLAGS
+== TABLE : DT_InfoLadderDismount ==
+-- props : 1 --
+== TABLE : DT_FuncLadder ==
+-- props : 5 --
+	Name = m_vecPlayerMountPositionTop 	Offset = 0x4c8 	Type = PT_VECTOR
+	Name = m_vecPlayerMountPositionBottom 	Offset = 0x4d4 	Type = PT_VECTOR
+	Name = m_vecLadderDir 	Offset = 0x4a8 	Type = PT_VECTOR
+	Name = m_bFakeLadder 	Offset = 0x4e1 	Type = PT_BOOL
+== TABLE : DT_DetailController ==
+-- props : 2 --
+	Name = m_flFadeStartDist 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_flFadeEndDist 	Offset = 0x4ac 	Type = PT_FLOAT
+== TABLE : DT_World ==
+-- props : 11 --
+	Name = m_flWaveHeight 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_WorldMins 	Offset = 0x4ac 	Type = PT_VECTOR
+	Name = m_WorldMaxs 	Offset = 0x4b8 	Type = PT_VECTOR
+	Name = m_bStartDark 	Offset = 0x4c4 	Type = PT_BOOL
+	Name = m_flMaxOccludeeArea 	Offset = 0x4c8 	Type = PT_FLOAT
+	Name = m_flMinOccluderArea 	Offset = 0x4cc 	Type = PT_FLOAT
+	Name = m_flMaxPropScreenSpaceWidth 	Offset = 0x4d4 	Type = PT_FLOAT
+	Name = m_flMinPropScreenSpaceWidth 	Offset = 0x4d0 	Type = PT_FLOAT
+	Name = m_iszDetailSpriteMaterial 	Offset = 0x4d9 	Type = PT_INT
+	Name = m_bColdWorld 	Offset = 0x4d8 	Type = PT_BOOL
+== TABLE : DT_WaterLODControl ==
+-- props : 3 --
+	Name = m_flCheapWaterStartDistance 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_flCheapWaterEndDistance 	Offset = 0x4ac 	Type = PT_FLOAT
+== TABLE : DT_WaterBullet ==
+-- props : 1 --
+== TABLE : DT_VoteController ==
+-- props : 6 --
+	Name = m_iActiveIssueIndex 	Offset = 0x4b0 	Type = PT_INT
+	Name = m_iOnlyTeamToVote 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_nVoteOptionCount 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_nPotentialVotes 	Offset = 0x4d0 	Type = PT_INT
+	Name = m_bIsYesNoVote 	Offset = 0x4d6 	Type = PT_BOOL
+== TABLE : DT_VGuiScreen ==
+-- props : 8 --
+	Name = m_flWidth 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_flHeight 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_fScreenFlags 	Offset = 0x4dc 	Type = PT_FLAGS
+	Name = m_nPanelName 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_nAttachmentIndex 	Offset = 0x4d4 	Type = PT_INT
+	Name = m_nOverlayMaterial 	Offset = 0x4d8 	Type = PT_INT
+	Name = m_hPlayerOwner 	Offset = 0x538 	Type = PT_EHANDLE
+== TABLE : DT_PropJeep ==
+-- props : 2 --
+	Name = m_bHeadlightIsOn 	Offset = 0x934 	Type = PT_BOOL
+== TABLE : DT_PropVehicleChoreoGeneric ==
+-- props : 15 --
+	Name = m_hPlayer 	Offset = 0x80c 	Type = PT_EHANDLE
+	Name = m_bEnterAnimOn 	Offset = 0x814 	Type = PT_BOOL
+	Name = m_bExitAnimOn 	Offset = 0x815 	Type = PT_BOOL
+	Name = m_vecEyeExitEndpoint 	Offset = 0x818 	Type = PT_VECTOR
+	Name = m_vehicleView.bClampEyeAngles 	Offset = 0x8a4 	Type = PT_INT
+	Name = m_vehicleView.flPitchCurveZero 	Offset = 0x8a8 	Type = PT_FLOAT
+	Name = m_vehicleView.flPitchCurveLinear 	Offset = 0x8ac 	Type = PT_FLOAT
+	Name = m_vehicleView.flRollCurveZero 	Offset = 0x8b0 	Type = PT_FLOAT
+	Name = m_vehicleView.flRollCurveLinear 	Offset = 0x8b4 	Type = PT_FLOAT
+	Name = m_vehicleView.flFOV 	Offset = 0x8b8 	Type = PT_FLOAT
+	Name = m_vehicleView.flYawMin 	Offset = 0x8bc 	Type = PT_FLOAT
+	Name = m_vehicleView.flYawMax 	Offset = 0x8c0 	Type = PT_FLOAT
+	Name = m_vehicleView.flPitchMin 	Offset = 0x8c4 	Type = PT_FLOAT
+	Name = m_vehicleView.flPitchMax 	Offset = 0x8c8 	Type = PT_FLOAT
+== TABLE : DT_DynamicProp ==
+-- props : 2 --
+	Name = m_bUseHitboxesForRenderBox 	Offset = 0x7e8 	Type = PT_BOOL
+== TABLE : DT_BreakableProp ==
+-- props : 1 --
+== TABLE : DT_ProxyToggle ==
+	== TABLE : DT_ProxyToggle_ProxiedData ==
+	-- props : 1 --
+		Name = m_WithProxy 	Offset = 0x4a8 	Type = PT_INT
+-- props : 2 --
+	Name = blah 	Offset = 0x0 	Type = PT_INT
+== TABLE : DT_Tesla ==
+-- props : 3 --
+	Name = m_SoundName 	Offset = 0x4d0 	Type = PT_UNKNOWN
+	Name = m_iszSpriteName 	Offset = 0x510 	Type = PT_INT
+== TABLE : DT_Sun ==
+-- props : 9 --
+	Name = m_clrRender 	Offset = 0x58 	Type = PT_INT
+	Name = m_clrOverlay 	Offset = 0x5f8 	Type = PT_INT
+	Name = m_vDirection 	Offset = 0x604 	Type = PT_VECTOR
+	Name = m_bOn 	Offset = 0x610 	Type = PT_BOOL
+	Name = m_nSize 	Offset = 0x5fc 	Type = PT_INT
+	Name = m_nOverlaySize 	Offset = 0x600 	Type = PT_INT
+	Name = m_nMaterial 	Offset = 0x614 	Type = PT_INT
+	Name = m_nOverlayMaterial 	Offset = 0x618 	Type = PT_INT
+	Name = HDRColorScale 	Offset = 0x0 	Type = PT_FLOAT
+== TABLE : DT_ParticlePerformanceMonitor ==
+-- props : 3 --
+	Name = m_bMeasurePerf 	Offset = 0x4a9 	Type = PT_BOOL
+	Name = m_bDisplayPerf 	Offset = 0x4a8 	Type = PT_BOOL
+== TABLE : DT_SpotlightEnd ==
+-- props : 3 --
+	Name = m_flLightScale 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_Radius 	Offset = 0x4ac 	Type = PT_FLOAT
+== TABLE : DT_SlideshowDisplay ==
+-- props : 9 --
+	Name = m_bEnabled 	Offset = 0x4a8 	Type = PT_BOOL
+	Name = m_szDisplayText 	Offset = 0x4a9 	Type = PT_CHARS
+	Name = m_szSlideshowDirectory 	Offset = 0x529 	Type = PT_CHARS
+	Name = m_chCurrentSlideLists 	Offset = 0x5c0 	Type = PT_CHAR
+	Name = m_fMinSlideTime 	Offset = 0x5d8 	Type = PT_FLAGS
+	Name = m_fMaxSlideTime 	Offset = 0x5dc 	Type = PT_FLAGS
+	Name = m_iCycleType 	Offset = 0x5e4 	Type = PT_INT
+	Name = m_bNoListRepeats 	Offset = 0x5e8 	Type = PT_BOOL
+== TABLE : DT_ShadowControl ==
+-- props : 5 --
+	Name = m_shadowDirection 	Offset = 0x4a8 	Type = PT_VECTOR
+	Name = m_shadowColor 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_flShadowMaxDist 	Offset = 0x4b8 	Type = PT_FLOAT
+	Name = m_bDisableShadows 	Offset = 0x4bc 	Type = PT_BOOL
+== TABLE : DT_SceneEntity ==
+-- props : 7 --
+	Name = m_nSceneStringIndex 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_bIsPlayingBack 	Offset = 0x4ac 	Type = PT_BOOL
+	Name = m_bPaused 	Offset = 0x4ad 	Type = PT_BOOL
+	Name = m_bMultiplayer 	Offset = 0x4ae 	Type = PT_BOOL
+	Name = m_flForceClientTime 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_hActorList 	Offset = 0x0 	Type = PT_EHANDLE
+== TABLE : DT_RopeKeyframe ==
+-- props : 18 --
+	Name = m_iRopeMaterialModelIndex 	Offset = 0x4e4 	Type = PT_INT
+	Name = m_hStartPoint 	Offset = 0x774 	Type = PT_EHANDLE
+	Name = m_hEndPoint 	Offset = 0x778 	Type = PT_EHANDLE
+	Name = m_iStartAttachment 	Offset = 0x77c 	Type = PT_INT
+	Name = m_iEndAttachment 	Offset = 0x77e 	Type = PT_INT
+	Name = m_fLockedPoints 	Offset = 0x790 	Type = PT_FLAGS
+	Name = m_Slack 	Offset = 0x788 	Type = PT_INT
+	Name = m_RopeLength 	Offset = 0x784 	Type = PT_INT
+	Name = m_RopeFlags 	Offset = 0x4e0 	Type = PT_INT
+	Name = m_TextureScale 	Offset = 0x78c 	Type = PT_FLOAT
+	Name = m_nSegments 	Offset = 0x770 	Type = PT_INT
+	Name = m_bConstrainBetweenEndpoints 	Offset = 0x818 	Type = PT_BOOL
+	Name = m_Subdiv 	Offset = 0x780 	Type = PT_INT
+	Name = m_Width 	Offset = 0x794 	Type = PT_FLOAT
+	Name = m_flScrollSpeed 	Offset = 0x4dc 	Type = PT_FLOAT
+	Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+	Name = moveparent 	Offset = 0x15c 	Type = PT_INT
+	Name = m_iParentAttachment 	Offset = 0x146 	Type = PT_INT
+== TABLE : DT_RagdollManager ==
+-- props : 1 --
+	Name = m_iCurrentMaxRagdollCount 	Offset = 0x4a8 	Type = PT_INT
+== TABLE : DT_PhysicsPropMultiplayer ==
+-- props : 5 --
+	Name = m_iPhysicsMode 	Offset = 0x7f4 	Type = PT_INT
+	Name = m_fMass 	Offset = 0x7f8 	Type = PT_FLAGS
+	Name = m_collisionMins 	Offset = 0x7fc 	Type = PT_VECTOR
+	Name = m_collisionMaxs 	Offset = 0x808 	Type = PT_VECTOR
+== TABLE : DT_PhysicsProp ==
+-- props : 2 --
+	Name = m_bAwake 	Offset = 0x7e8 	Type = PT_BOOL
+== TABLE : DT_PhysBoxMultiplayer ==
+-- props : 3 --
+	Name = m_iPhysicsMode 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_fMass 	Offset = 0x4b8 	Type = PT_FLAGS
+== TABLE : DT_PhysBox ==
+-- props : 2 --
+	Name = m_mass 	Offset = 0x4a8 	Type = PT_FLOAT
+== TABLE : DT_BasePropDoor ==
+-- props : 1 --
+== TABLE : DT_PointCommentaryNode ==
+-- props : 9 --
+	Name = m_bActive 	Offset = 0x7e8 	Type = PT_BOOL
+	Name = m_flStartTime 	Offset = 0x7ec 	Type = PT_FLOAT
+	Name = m_iszCommentaryFile 	Offset = 0x7f0 	Type = PT_INT
+	Name = m_iszCommentaryFileNoHDR 	Offset = 0x8f4 	Type = PT_INT
+	Name = m_iszSpeakers 	Offset = 0x9f8 	Type = PT_INT
+	Name = m_iNodeNumber 	Offset = 0xaf8 	Type = PT_INT
+	Name = m_iNodeNumberMax 	Offset = 0xafc 	Type = PT_INT
+	Name = m_hViewPosition 	Offset = 0xb04 	Type = PT_EHANDLE
+== TABLE : DT_PointCamera ==
+-- props : 10 --
+	Name = m_FOV 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_Resolution 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_bFogEnable 	Offset = 0x4b0 	Type = PT_BOOL
+	Name = m_FogColor 	Offset = 0x4b1 	Type = PT_INT
+	Name = m_flFogStart 	Offset = 0x4b8 	Type = PT_FLOAT
+	Name = m_flFogEnd 	Offset = 0x4bc 	Type = PT_FLOAT
+	Name = m_flFogMaxDensity 	Offset = 0x4c0 	Type = PT_FLOAT
+	Name = m_bActive 	Offset = 0x4c4 	Type = PT_BOOL
+	Name = m_bUseScreenAspectRatio 	Offset = 0x4c5 	Type = PT_BOOL
+== TABLE : DT_Plasma ==
+-- props : 8 --
+	Name = m_flStartScale 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_flScale 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_flScaleTime 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_nFlags 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_nPlasmaModelIndex 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_nPlasmaModelIndex2 	Offset = 0x4bc 	Type = PT_INT
+	Name = m_nGlowModelIndex 	Offset = 0x4c0 	Type = PT_INT
+== TABLE : DT_PhysMagnet ==
+-- props : 1 --
+== TABLE : DT_ParticleSystem ==
+-- props : 11 --
+	Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+	Name = m_hOwnerEntity 	Offset = 0x46c 	Type = PT_EHANDLE
+	Name = moveparent 	Offset = 0x15c 	Type = PT_INT
+	Name = m_iParentAttachment 	Offset = 0x146 	Type = PT_INT
+	Name = m_angRotation 	Offset = 0x2d8 	Type = PT_QANGLE
+	Name = m_iEffectIndex 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_bActive 	Offset = 0x4ac 	Type = PT_BOOL
+	Name = m_flStartTime 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_hControlPointEnts 	Offset = 0x4b4 	Type = PT_EHANDLE
+	Name = m_iControlPointParents 	Offset = 0x5b0 	Type = PT_INT
+	Name = m_bWeatherEffect 	Offset = 0x5ef 	Type = PT_BOOL
+== TABLE : DT_MaterialModifyControl ==
+-- props : 14 --
+	Name = m_szMaterialName 	Offset = 0x4a8 	Type = PT_CHARS
+	Name = m_szMaterialVar 	Offset = 0x5a7 	Type = PT_CHARS
+	Name = m_szMaterialVarValue 	Offset = 0x6a6 	Type = PT_CHARS
+	Name = m_iFrameStart 	Offset = 0x7b0 	Type = PT_INT
+	Name = m_iFrameEnd 	Offset = 0x7b4 	Type = PT_INT
+	Name = m_bWrap 	Offset = 0x7b8 	Type = PT_BOOL
+	Name = m_flFramerate 	Offset = 0x7bc 	Type = PT_FLOAT
+	Name = m_bNewAnimCommandsSemaphore 	Offset = 0x7c0 	Type = PT_BOOL
+	Name = m_flFloatLerpStartValue 	Offset = 0x7c4 	Type = PT_FLOAT
+	Name = m_flFloatLerpEndValue 	Offset = 0x7c8 	Type = PT_FLOAT
+	Name = m_flFloatLerpTransitionTime 	Offset = 0x7cc 	Type = PT_FLOAT
+	Name = m_bFloatLerpWrap 	Offset = 0x7d0 	Type = PT_BOOL
+	Name = m_nModifyMode 	Offset = 0x7d8 	Type = PT_INT
+== TABLE : DT_LightGlow ==
+-- props : 12 --
+	Name = m_clrRender 	Offset = 0x58 	Type = PT_INT
+	Name = m_nHorizontalSize 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_nVerticalSize 	Offset = 0x4ac 	Type = PT_INT
+	Name = m_nMinDist 	Offset = 0x4b0 	Type = PT_INT
+	Name = m_nMaxDist 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_nOuterMaxDist 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_spawnflags 	Offset = 0x4bc 	Type = PT_INT
+	Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+	Name = m_angRotation 	Offset = 0x2d8 	Type = PT_QANGLE
+	Name = moveparent 	Offset = 0x15c 	Type = PT_INT
+	Name = m_flGlowProxySize 	Offset = 0x58c 	Type = PT_FLOAT
+	Name = HDRColorScale 	Offset = 0x0 	Type = PT_FLOAT
+== TABLE : DT_InfoOverlayAccessor ==
+-- props : 2 --
+	Name = m_iTextureFrameIndex 	Offset = 0x460 	Type = PT_INT
+	Name = m_iOverlayID 	Offset = 0x4a8 	Type = PT_INT
+== TABLE : DT_FuncTrackTrain ==
+-- props : 1 --
+== TABLE : DT_FuncSmokeVolume ==
+-- props : 12 --
+	Name = m_Color1 	Offset = 0x594 	Type = PT_INT
+	Name = m_Color2 	Offset = 0x598 	Type = PT_INT
+	Name = m_MaterialName 	Offset = 0x59c 	Type = PT_UNKNOWN
+	Name = m_ParticleDrawWidth 	Offset = 0x69c 	Type = PT_FLOAT
+	Name = m_ParticleSpacingDistance 	Offset = 0x6a0 	Type = PT_FLOAT
+	Name = m_DensityRampSpeed 	Offset = 0x6a4 	Type = PT_FLOAT
+	Name = m_RotationSpeed 	Offset = 0x6a8 	Type = PT_FLOAT
+	Name = m_MovementSpeed 	Offset = 0x6ac 	Type = PT_FLOAT
+	Name = m_Density 	Offset = 0x6b0 	Type = PT_FLOAT
+	Name = m_spawnflags 	Offset = 0x6b4 	Type = PT_INT
+	Name = m_Collision 	Offset = 0x168 	Type = PT_INT
+== TABLE : DT_FuncRotating ==
+-- props : 6 --
+	Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+	Name = m_angRotation[0] 	Offset = 0x2d8 	Type = PT_QANGLE
+	Name = m_angRotation[1] 	Offset = 0x2dc 	Type = PT_QANGLE
+	Name = m_angRotation[2] 	Offset = 0x2e0 	Type = PT_QANGLE
+	Name = m_flSimulationTime 	Offset = 0x68 	Type = PT_FLOAT
+== TABLE : DT_FuncReflectiveGlass ==
+-- props : 1 --
+== TABLE : DT_FuncOccluder ==
+-- props : 3 --
+	Name = m_bActive 	Offset = 0x4ac 	Type = PT_BOOL
+	Name = m_nOccluderIndex 	Offset = 0x4a8 	Type = PT_INT
+== TABLE : DT_FuncMonitor ==
+-- props : 1 --
+== TABLE : DT_Func_LOD ==
+-- props : 2 --
+	Name = m_fDisappearDist 	Offset = 0x4a8 	Type = PT_FLAGS
+== TABLE : DT_TEDust ==
+-- props : 4 --
+	Name = m_flSize 	Offset = 0x1c 	Type = PT_FLOAT
+	Name = m_flSpeed 	Offset = 0x20 	Type = PT_FLOAT
+	Name = m_vecDirection 	Offset = 0x24 	Type = PT_VECTOR
+== TABLE : DT_Func_Dust ==
+	== TABLE : DT_CollisionProperty ==
+	-- props : 8 --
+		Name = m_vecMins 	Offset = 0x8 	Type = PT_VECTOR
+		Name = m_vecMaxs 	Offset = 0x14 	Type = PT_VECTOR
+		Name = m_nSolidType 	Offset = 0x29 	Type = PT_INT
+		Name = m_usSolidFlags 	Offset = 0x24 	Type = PT_INT
+		Name = m_nSurroundType 	Offset = 0x28 	Type = PT_INT
+		Name = m_triggerBloat 	Offset = 0x2a 	Type = PT_INT
+		Name = m_vecSpecifiedSurroundingMins 	Offset = 0x2c 	Type = PT_VECTOR
+		Name = m_vecSpecifiedSurroundingMaxs 	Offset = 0x38 	Type = PT_VECTOR
+-- props : 12 --
+	Name = m_Color 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_SpawnRate 	Offset = 0x4ac 	Type = PT_INT
+	Name = m_flSizeMin 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_flSizeMax 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_LifetimeMin 	Offset = 0x4bc 	Type = PT_INT
+	Name = m_LifetimeMax 	Offset = 0x4c0 	Type = PT_INT
+	Name = m_DustFlags 	Offset = 0x4cc 	Type = PT_INT
+	Name = m_SpeedMax 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_DistMax 	Offset = 0x4c4 	Type = PT_INT
+	Name = m_nModelIndex 	Offset = 0x8c 	Type = PT_INT
+	Name = m_FallSpeed 	Offset = 0x4c8 	Type = PT_FLOAT
+	Name = m_Collision 	Offset = 0x168 	Type = PT_INT
+== TABLE : DT_FuncConveyor ==
+-- props : 2 --
+	Name = m_flConveyorSpeed 	Offset = 0x4a8 	Type = PT_FLOAT
+== TABLE : DT_BreakableSurface ==
+-- props : 10 --
+	Name = m_nNumWide 	Offset = 0x4ac 	Type = PT_INT
+	Name = m_nNumHigh 	Offset = 0x4b0 	Type = PT_INT
+	Name = m_flPanelWidth 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_flPanelHeight 	Offset = 0x4b8 	Type = PT_FLOAT
+	Name = m_vNormal 	Offset = 0x4bc 	Type = PT_VECTOR
+	Name = m_vCorner 	Offset = 0x4c8 	Type = PT_VECTOR
+	Name = m_bIsBroken 	Offset = 0x4d4 	Type = PT_BOOL
+	Name = m_nSurfaceType 	Offset = 0x4d8 	Type = PT_INT
+	Name = m_RawPanelBitVec 	Offset = 0x4fc 	Type = PT_UNKNOWN
+== TABLE : DT_FuncAreaPortalWindow ==
+-- props : 5 --
+	Name = m_flFadeStartDist 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_flFadeDist 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_flTranslucencyLimit 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_iBackgroundModelIndex 	Offset = 0x4b4 	Type = PT_INT
+== TABLE : DT_CFish ==
+-- props : 8 --
+	Name = m_poolOrigin 	Offset = 0x844 	Type = PT_VECTOR
+	Name = m_x 	Offset = 0x82c 	Type = PT_FLOAT
+	Name = m_y 	Offset = 0x830 	Type = PT_FLOAT
+	Name = m_z 	Offset = 0x834 	Type = PT_FLOAT
+	Name = m_angle 	Offset = 0x83c 	Type = PT_QANGLE
+	Name = m_nModelIndex 	Offset = 0x8c 	Type = PT_INT
+	Name = m_lifeState 	Offset = 0x8f 	Type = PT_INT
+	Name = m_waterLevel 	Offset = 0x850 	Type = PT_FLOAT
+== TABLE : DT_EntityFlame ==
+-- props : 2 --
+	Name = m_hEntAttached 	Offset = 0x4ac 	Type = PT_EHANDLE
+== TABLE : DT_FireSmoke ==
+-- props : 7 --
+	Name = m_flStartScale 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_flScale 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_flScaleTime 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_nFlags 	Offset = 0x4b4 	Type = PT_INT
+	Name = m_nFlameModelIndex 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_nFlameFromAboveModelIndex 	Offset = 0x4bc 	Type = PT_INT
+== TABLE : DT_EnvTonemapController ==
+-- props : 8 --
+	Name = m_bUseCustomAutoExposureMin 	Offset = 0x4a8 	Type = PT_BOOL
+	Name = m_bUseCustomAutoExposureMax 	Offset = 0x4a9 	Type = PT_BOOL
+	Name = m_bUseCustomBloomScale 	Offset = 0x4aa 	Type = PT_BOOL
+	Name = m_flCustomAutoExposureMin 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_flCustomAutoExposureMax 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_flCustomBloomScale 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_flCustomBloomScaleMinimum 	Offset = 0x4b8 	Type = PT_FLOAT
+== TABLE : DT_EnvScreenEffect ==
+-- props : 3 --
+	Name = m_flDuration 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_nType 	Offset = 0x4ac 	Type = PT_INT
+== TABLE : DT_EnvScreenOverlay ==
+-- props : 8 --
+	Name = m_iszOverlayNames[0] 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_iszOverlayNames 	Offset = 0x0 	Type = PT_INT
+	Name = m_flOverlayTimes[0] 	Offset = 0xea0 	Type = PT_FLOAT
+	Name = m_flOverlayTimes 	Offset = 0x0 	Type = PT_FLOAT
+	Name = m_flStartTime 	Offset = 0xec8 	Type = PT_FLOAT
+	Name = m_iDesiredOverlay 	Offset = 0xecc 	Type = PT_INT
+	Name = m_bIsActive 	Offset = 0xed0 	Type = PT_BOOL
+== TABLE : DT_EnvProjectedTexture ==
+-- props : 15 --
+	Name = m_hTargetEntity 	Offset = 0x4ac 	Type = PT_EHANDLE
+	Name = m_bState 	Offset = 0x4b0 	Type = PT_BOOL
+	Name = m_flLightFOV 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_bEnableShadows 	Offset = 0x4b8 	Type = PT_BOOL
+	Name = m_bLightOnlyTarget 	Offset = 0x4b9 	Type = PT_BOOL
+	Name = m_bLightWorld 	Offset = 0x4ba 	Type = PT_BOOL
+	Name = m_bCameraSpace 	Offset = 0x4bb 	Type = PT_BOOL
+	Name = m_LinearFloatLightColor 	Offset = 0x4bc 	Type = PT_VECTOR
+	Name = m_flAmbient 	Offset = 0x4c8 	Type = PT_FLOAT
+	Name = m_SpotlightTextureName 	Offset = 0x4d4 	Type = PT_UNKNOWN
+	Name = m_nSpotlightTextureFrame 	Offset = 0x5d8 	Type = PT_INT
+	Name = m_flNearZ 	Offset = 0x4cc 	Type = PT_FLOAT
+	Name = m_flFarZ 	Offset = 0x4d0 	Type = PT_FLOAT
+	Name = m_nShadowQuality 	Offset = 0x5dc 	Type = PT_INT
+== TABLE : DT_EnvParticleScript ==
+-- props : 2 --
+	Name = m_flSequenceScale 	Offset = 0x8cc 	Type = PT_FLOAT
+== TABLE : DT_FogController ==
+-- props : 15 --
+	Name = m_fog.enable 	Offset = 0x4e8 	Type = PT_FLAGS
+	Name = m_fog.blend 	Offset = 0x4e9 	Type = PT_FLAGS
+	Name = m_fog.dirPrimary 	Offset = 0x4ac 	Type = PT_FLAGS
+	Name = m_fog.colorPrimary 	Offset = 0x4b8 	Type = PT_FLAGS
+	Name = m_fog.colorSecondary 	Offset = 0x4bc 	Type = PT_FLAGS
+	Name = m_fog.start 	Offset = 0x4c8 	Type = PT_FLAGS
+	Name = m_fog.end 	Offset = 0x4cc 	Type = PT_FLAGS
+	Name = m_fog.farz 	Offset = 0x4d0 	Type = PT_FLAGS
+	Name = m_fog.maxdensity 	Offset = 0x4d4 	Type = PT_FLAGS
+	Name = m_fog.colorPrimaryLerpTo 	Offset = 0x4c0 	Type = PT_FLAGS
+	Name = m_fog.colorSecondaryLerpTo 	Offset = 0x4c4 	Type = PT_FLAGS
+	Name = m_fog.startLerpTo 	Offset = 0x4d8 	Type = PT_FLAGS
+	Name = m_fog.endLerpTo 	Offset = 0x4dc 	Type = PT_FLAGS
+	Name = m_fog.lerptime 	Offset = 0x4e0 	Type = PT_FLAGS
+	Name = m_fog.duration 	Offset = 0x4e4 	Type = PT_FLAGS
+== TABLE : DT_EntityParticleTrail ==
+	== TABLE : DT_EntityParticleTrailInfo ==
+	-- props : 3 --
+		Name = m_flLifetime 	Offset = 0x8 	Type = PT_FLOAT
+		Name = m_flStartSize 	Offset = 0xc 	Type = PT_FLOAT
+		Name = m_flEndSize 	Offset = 0x10 	Type = PT_FLOAT
+-- props : 4 --
+	Name = m_iMaterialName 	Offset = 0x590 	Type = PT_INT
+	Name = m_Info 	Offset = 0x594 	Type = PT_INT
+	Name = m_hConstraintEntity 	Offset = 0x5a8 	Type = PT_EHANDLE
+== TABLE : DT_EntityDissolve ==
+-- props : 11 --
+	Name = m_flStartTime 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_flFadeOutStart 	Offset = 0x4b0 	Type = PT_FLOAT
+	Name = m_flFadeOutLength 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_flFadeOutModelStart 	Offset = 0x4b8 	Type = PT_FLOAT
+	Name = m_flFadeOutModelLength 	Offset = 0x4bc 	Type = PT_FLOAT
+	Name = m_flFadeInStart 	Offset = 0x4c0 	Type = PT_FLOAT
+	Name = m_flFadeInLength 	Offset = 0x4c4 	Type = PT_FLOAT
+	Name = m_nDissolveType 	Offset = 0x4c8 	Type = PT_INT
+	Name = m_vDissolverOrigin 	Offset = 0x4dc 	Type = PT_VECTOR
+	Name = m_nMagnitude 	Offset = 0x4e8 	Type = PT_INT
+== TABLE : DT_DynamicLight ==
+-- props : 8 --
+	Name = m_Flags 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_LightStyle 	Offset = 0x4a9 	Type = PT_INT
+	Name = m_Radius 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_Exponent 	Offset = 0x4b0 	Type = PT_INT
+	Name = m_InnerAngle 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_OuterAngle 	Offset = 0x4b8 	Type = PT_FLOAT
+	Name = m_SpotRadius 	Offset = 0x4bc 	Type = PT_FLOAT
+== TABLE : DT_ColorCorrectionVolume ==
+-- props : 3 --
+	Name = m_Weight 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_lookupFilename 	Offset = 0x4ac 	Type = PT_UNKNOWN
+== TABLE : DT_ColorCorrection ==
+-- props : 7 --
+	Name = m_vecOrigin 	Offset = 0x4a8 	Type = PT_VECTOR
+	Name = m_minFalloff 	Offset = 0x4b4 	Type = PT_FLOAT
+	Name = m_maxFalloff 	Offset = 0x4b8 	Type = PT_FLOAT
+	Name = m_flCurWeight 	Offset = 0x4bc 	Type = PT_FLOAT
+	Name = m_netLookupFilename 	Offset = 0x4c0 	Type = PT_INT
+	Name = m_bEnabled 	Offset = 0x5c4 	Type = PT_BOOL
+== TABLE : DT_BaseDoor ==
+-- props : 2 --
+	Name = m_flWaveHeight 	Offset = 0x4a8 	Type = PT_FLOAT
+== TABLE : DT_BoneFollower ==
+-- props : 3 --
+	Name = m_modelIndex 	Offset = 0x4a8 	Type = PT_INT
+	Name = m_solidIndex 	Offset = 0x4ac 	Type = PT_INT
+== TABLE : DT_InfoLightingRelative ==
+-- props : 2 --
+	Name = m_hLightingLandmark 	Offset = 0x4a8 	Type = PT_EHANDLE
+== TABLE : DT_AI_BaseNPC ==
+-- props : 12 --
+	Name = m_lifeState 	Offset = 0x8f 	Type = PT_INT
+	Name = m_bPerformAvoidance 	Offset = 0xd04 	Type = PT_BOOL
+	Name = m_bIsMoving 	Offset = 0xd05 	Type = PT_BOOL
+	Name = m_bFadeCorpse 	Offset = 0xd06 	Type = PT_BOOL
+	Name = m_iDeathPose 	Offset = 0xcf4 	Type = PT_INT
+	Name = m_iDeathFrame 	Offset = 0xcf8 	Type = PT_INT
+	Name = m_iSpeedModRadius 	Offset = 0xcfc 	Type = PT_INT
+	Name = m_iSpeedModSpeed 	Offset = 0xd00 	Type = PT_INT
+	Name = m_bSpeedModActive 	Offset = 0xd07 	Type = PT_BOOL
+	Name = m_bImportanRagdoll 	Offset = 0xd08 	Type = PT_BOOL
+	Name = m_flTimePingEffect 	Offset = 0xcf0 	Type = PT_FLOAT
+== TABLE : DT_Beam ==
+	== TABLE : DT_BeamPredictableId ==
+	-- props : 2 --
+		Name = m_PredictableID 	Offset = 0x9c 	Type = PT_INT
+		Name = m_bIsPlayerSimulated 	Offset = 0x45c 	Type = PT_BOOL
+-- props : 25 --
+	Name = m_nBeamType 	Offset = 0x4c4 	Type = PT_INT
+	Name = m_nBeamFlags 	Offset = 0x4c8 	Type = PT_INT
+	Name = m_nNumBeamEnts 	Offset = 0x4b8 	Type = PT_INT
+	Name = m_hAttachEntity 	Offset = 0x4cc 	Type = PT_EHANDLE
+	Name = m_nAttachIndex 	Offset = 0x4f4 	Type = PT_INT
+	Name = m_nHaloIndex 	Offset = 0x4c0 	Type = PT_INT
+	Name = m_fHaloScale 	Offset = 0x528 	Type = PT_FLAGS
+	Name = m_fWidth 	Offset = 0x51c 	Type = PT_FLAGS
+	Name = m_fEndWidth 	Offset = 0x520 	Type = PT_FLAGS
+	Name = m_fFadeLength 	Offset = 0x524 	Type = PT_FLAGS
+	Name = m_fAmplitude 	Offset = 0x52c 	Type = PT_FLAGS
+	Name = m_fStartFrame 	Offset = 0x530 	Type = PT_FLAGS
+	Name = m_fSpeed 	Offset = 0x534 	Type = PT_FLAGS
+	Name = m_flFrameRate 	Offset = 0x4a8 	Type = PT_FLOAT
+	Name = m_flHDRColorScale 	Offset = 0x4ac 	Type = PT_FLOAT
+	Name = m_clrRender 	Offset = 0x58 	Type = PT_INT
+	Name = m_nRenderFX 	Offset = 0x54 	Type = PT_INT
+	Name = m_nRenderMode 	Offset = 0x7c 	Type = PT_INT
+	Name = m_flFrame 	Offset = 0x53c 	Type = PT_FLOAT
+	Name = m_vecEndPos 	Offset = 0x540 	Type = PT_VECTOR
+	Name = m_nModelIndex 	Offset = 0x8c 	Type = PT_INT
+	Name = m_nMinDXLevel 	Offset = 0x538 	Type = PT_INT
+	Name = m_vecOrigin 	Offset = 0x2cc 	Type = PT_VECTOR
+	Name = moveparent 	Offset = 0x15c 	Type = PT_INT
+	Name = beampredictable_id 	Offset = 0x0 	Type = PT_INT
